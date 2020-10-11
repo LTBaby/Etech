@@ -1,0 +1,12 @@
+C:\Users\trevo\Desktop\Etech\Etech\Etech\bin\Debug\Etech.exe.config
+C:\Users\trevo\Desktop\Etech\Etech\Etech\bin\Debug\Etech.exe
+C:\Users\trevo\Desktop\Etech\Etech\Etech\bin\Debug\Etech.pdb
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.csprojAssemblyReference.cache
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Controls.menu.resources
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Form1.resources
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Properties.Resources.resources
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.csproj.GenerateResource.cache
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.csproj.CoreCompileInputs.cache
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.exe
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.pdb
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Controls.MenuButton.resources

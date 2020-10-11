@@ -32,8 +32,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bunifu.Core, Version=1.11.5.1, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
+    <Reference Include="Bunifu_UI_v1.5.3, Version=1.5.3.0, Culture=neutral, PublicKeyToken=e8e24ccd28363fe9, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -45,11 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controls\Dashboardbutton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Dashboardbutton.Designer.cs">
+      <DependentUpon>Dashboardbutton.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controls\menu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Controls\menu.Designer.cs">
       <DependentUpon>menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MenuButton.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\MenuButton.Designer.cs">
+      <DependentUpon>MenuButton.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -61,6 +77,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Controls\menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\MenuButton.resx">
+      <DependentUpon>MenuButton.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -86,6 +105,61 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resource\19085-200.png" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.Core.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForm.BunifuShadowPanel.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuButton.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCheckBox.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCircleProgress.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuCircleProgress.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuColorTransition.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuColorTransition.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDataGridView.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDatePicker.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDropdown.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuDropdown.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuFormDock.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuGauge.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuGauge.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuImageButton.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuLabel.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPages.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPages.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuPictureBox.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuProgressBar.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuProgressBar.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuRadioButton.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuScrollBar.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuScrollBar.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuSlider.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuSlider.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTextbox.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuToolTip.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuToolTip.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTransition.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuTransition.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuUserControl.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.BunifuUserControl.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.ToggleSwitch.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu.UI.WinForms.ToggleSwitch.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.dll" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Bunifu_UI_v1.5.3.xml" />
+    <Content Include="Resource\Bunifu-UI-WinForms-1.11.5.1_ShareAppsCrack.com %281%29\Bunifu UI WinForms 1.11.5.1\Crack\Bunifu_UI_Activator_v1.5_By_DFoX.exe" />
+    <Content Include="Resource\menu.png" />
+    <Content Include="Resource\menu1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
