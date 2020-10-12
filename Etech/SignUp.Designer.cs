@@ -146,7 +146,7 @@
             this.bunifuMaterialTextbox5.Name = "bunifuMaterialTextbox5";
             this.bunifuMaterialTextbox5.Size = new System.Drawing.Size(282, 33);
             this.bunifuMaterialTextbox5.TabIndex = 4;
-            this.bunifuMaterialTextbox5.Text = "e";
+            this.bunifuMaterialTextbox5.Text = "Email Address";
             this.bunifuMaterialTextbox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuMaterialTextbox6
@@ -170,7 +170,7 @@
             this.bunifuMaterialTextbox6.Name = "bunifuMaterialTextbox6";
             this.bunifuMaterialTextbox6.Size = new System.Drawing.Size(204, 33);
             this.bunifuMaterialTextbox6.TabIndex = 5;
-            this.bunifuMaterialTextbox6.Text = "bunifuMaterialTextbox6";
+            this.bunifuMaterialTextbox6.Text = "Cell Number";
             this.bunifuMaterialTextbox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuMaterialTextbox7
@@ -194,7 +194,7 @@
             this.bunifuMaterialTextbox7.Name = "bunifuMaterialTextbox7";
             this.bunifuMaterialTextbox7.Size = new System.Drawing.Size(167, 33);
             this.bunifuMaterialTextbox7.TabIndex = 6;
-            this.bunifuMaterialTextbox7.Text = "bunifuMaterialTextbox7";
+            this.bunifuMaterialTextbox7.Text = "Password";
             this.bunifuMaterialTextbox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // bunifuGradientPanel1
@@ -221,9 +221,9 @@
             this.bunifuGradientPanel1.Controls.Add(this.bunifuMaterialTextbox5);
             this.bunifuGradientPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.bunifuGradientPanel1.GradientBottomLeft = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(16)))));
-            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(16)))));
+            this.bunifuGradientPanel1.GradientBottomRight = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
             this.bunifuGradientPanel1.GradientTopLeft = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(16)))));
-            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(16)))));
+            this.bunifuGradientPanel1.GradientTopRight = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
@@ -276,7 +276,7 @@
             this.bunifuMaterialTextbox4.Name = "bunifuMaterialTextbox4";
             this.bunifuMaterialTextbox4.Size = new System.Drawing.Size(167, 33);
             this.bunifuMaterialTextbox4.TabIndex = 17;
-            this.bunifuMaterialTextbox4.Text = "bunifuMaterialTextbox4";
+            this.bunifuMaterialTextbox4.Text = "Confirm Password";
             this.bunifuMaterialTextbox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // label8
@@ -392,7 +392,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.ElipseRadius = 20;
             this.bunifuElipse1.TargetControl = this;
             // 
             // button1

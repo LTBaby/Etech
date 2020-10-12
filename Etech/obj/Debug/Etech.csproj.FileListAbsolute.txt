@@ -10,3 +10,12 @@ C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.csproj.CoreCompileInput
 C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.exe
 C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.pdb
 C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Controls.MenuButton.resources
+C:\Users\trevo\Desktop\Etech\Etech\Etech\bin\Debug\Bunifu.Core.dll
+C:\Users\trevo\Desktop\Etech\Etech\Etech\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\trevo\Desktop\Etech\Etech\Etech\bin\Debug\Bunifu_UI_v1.5.3.xml
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.exe.config
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Categories.resources
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Login.resources
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Shop.resources
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.SignUp.resources
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.csproj.CopyComplete

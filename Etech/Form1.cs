@@ -39,5 +39,24 @@ namespace Etech
         {
             this.Close();
         }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SignUp signUp = new SignUp();
+            signUp.Show();
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            Categories categories = new Categories();
+            categories.Show();
+            this.Hide();
+        }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+        }
     }
 }
