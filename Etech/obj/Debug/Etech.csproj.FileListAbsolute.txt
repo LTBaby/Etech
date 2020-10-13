@@ -19,3 +19,4 @@ C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Login.resources
 C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.Shop.resources
 C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.SignUp.resources
 C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.csproj.CopyComplete
+C:\Users\trevo\Desktop\Etech\Etech\Etech\obj\Debug\Etech.AdminDashboard.resources

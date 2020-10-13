@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shop));
             this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.bunifuRange1 = new Bunifu.Framework.UI.BunifuRange();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.bunifuRange1 = new Bunifu.Framework.UI.BunifuRange();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
             this.bunifuCards2 = new Bunifu.Framework.UI.BunifuCards();
             this.bunifuCards3 = new Bunifu.Framework.UI.BunifuCards();
             this.bunifuCards4 = new Bunifu.Framework.UI.BunifuCards();
-            this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
             this.bunifuFlatButton7 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.bunifuCards5 = new Bunifu.Framework.UI.BunifuCards();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
@@ -96,6 +96,53 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(231, 591);
             this.panel1.TabIndex = 7;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(177, 96);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(33, 16);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "max";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(3, 96);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(29, 16);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "min";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(3, 112);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(49, 16);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "R 5000";
+            // 
+            // bunifuRange1
+            // 
+            this.bunifuRange1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuRange1.BackgroudColor = System.Drawing.Color.DarkGray;
+            this.bunifuRange1.BorderRadius = 0;
+            this.bunifuRange1.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
+            this.bunifuRange1.Location = new System.Drawing.Point(4, 128);
+            this.bunifuRange1.MaximumRange = 20000;
+            this.bunifuRange1.Name = "bunifuRange1";
+            this.bunifuRange1.RangeMax = 18937;
+            this.bunifuRange1.RangeMin = 0;
+            this.bunifuRange1.Size = new System.Drawing.Size(222, 30);
+            this.bunifuRange1.TabIndex = 11;
             // 
             // label3
             // 
@@ -152,53 +199,6 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(736, 529);
             this.flowLayoutPanel1.TabIndex = 9;
             this.flowLayoutPanel1.WrapContents = false;
-            // 
-            // bunifuRange1
-            // 
-            this.bunifuRange1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuRange1.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.bunifuRange1.BorderRadius = 0;
-            this.bunifuRange1.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            this.bunifuRange1.Location = new System.Drawing.Point(4, 128);
-            this.bunifuRange1.MaximumRange = 20000;
-            this.bunifuRange1.Name = "bunifuRange1";
-            this.bunifuRange1.RangeMax = 18937;
-            this.bunifuRange1.RangeMin = 0;
-            this.bunifuRange1.Size = new System.Drawing.Size(222, 30);
-            this.bunifuRange1.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 112);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 16);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "R 5000";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(3, 96);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "min";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(177, 96);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "max";
             // 
             // bunifuCards1
             // 
@@ -263,37 +263,6 @@
             this.bunifuCards4.Size = new System.Drawing.Size(707, 127);
             this.bunifuCards4.TabIndex = 3;
             // 
-            // bunifuCards5
-            // 
-            this.bunifuCards5.AutoScroll = true;
-            this.bunifuCards5.BackColor = System.Drawing.Color.White;
-            this.bunifuCards5.BorderRadius = 5;
-            this.bunifuCards5.BottomSahddow = true;
-            this.bunifuCards5.color = System.Drawing.Color.Tomato;
-            this.bunifuCards5.LeftSahddow = false;
-            this.bunifuCards5.Location = new System.Drawing.Point(3, 535);
-            this.bunifuCards5.Name = "bunifuCards5";
-            this.bunifuCards5.RightSahddow = true;
-            this.bunifuCards5.ShadowDepth = 20;
-            this.bunifuCards5.Size = new System.Drawing.Size(707, 127);
-            this.bunifuCards5.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.Black;
-            this.panel3.Location = new System.Drawing.Point(19, 16);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(130, 100);
-            this.panel3.TabIndex = 1;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.Black;
-            this.panel4.Location = new System.Drawing.Point(155, 16);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(375, 81);
-            this.panel4.TabIndex = 2;
-            // 
             // bunifuFlatButton7
             // 
             this.bunifuFlatButton7.Active = false;
@@ -328,6 +297,37 @@
             this.bunifuFlatButton7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bunifuFlatButton7.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton7.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.Black;
+            this.panel4.Location = new System.Drawing.Point(155, 16);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(375, 81);
+            this.panel4.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.Black;
+            this.panel3.Location = new System.Drawing.Point(19, 16);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(130, 100);
+            this.panel3.TabIndex = 1;
+            // 
+            // bunifuCards5
+            // 
+            this.bunifuCards5.AutoScroll = true;
+            this.bunifuCards5.BackColor = System.Drawing.Color.White;
+            this.bunifuCards5.BorderRadius = 5;
+            this.bunifuCards5.BottomSahddow = true;
+            this.bunifuCards5.color = System.Drawing.Color.Tomato;
+            this.bunifuCards5.LeftSahddow = false;
+            this.bunifuCards5.Location = new System.Drawing.Point(3, 535);
+            this.bunifuCards5.Name = "bunifuCards5";
+            this.bunifuCards5.RightSahddow = true;
+            this.bunifuCards5.ShadowDepth = 20;
+            this.bunifuCards5.Size = new System.Drawing.Size(707, 127);
+            this.bunifuCards5.TabIndex = 4;
             // 
             // bunifuGradientPanel1
             // 
