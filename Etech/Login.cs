@@ -21,5 +21,17 @@ namespace Etech
         {
             this.Close();
         }
+
+        private void bunifuThinButton21_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Customer customer = new AlphaMightyFoxtrot.Customer();
+            customer.EmailAddress = bunifuMaterialTextbox3.Text;
+            customer.Password = bunifuMaterialTextbox5.Text;
+            bool err = customer.LoginCustomer();
+            if (!err)
+            {
+                MessageBox.Show("not correct");
+            }
+        }
     }
 }

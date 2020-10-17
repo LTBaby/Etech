@@ -74,8 +74,10 @@
             this.bunifuMaterialTextbox1.Name = "bunifuMaterialTextbox1";
             this.bunifuMaterialTextbox1.Size = new System.Drawing.Size(193, 33);
             this.bunifuMaterialTextbox1.TabIndex = 0;
-            this.bunifuMaterialTextbox1.Text = "Full Name";
+            this.bunifuMaterialTextbox1.Text = "First Name";
             this.bunifuMaterialTextbox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.bunifuMaterialTextbox1.OnValueChanged += new System.EventHandler(this.bunifuMaterialTextbox1_OnValueChanged);
+            this.bunifuMaterialTextbox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.bunifuMaterialTextbox1_MouseClick);
             // 
             // bunifuMaterialTextbox2
             // 
@@ -264,6 +266,7 @@
             this.bunifuThinButton21.Size = new System.Drawing.Size(181, 41);
             this.bunifuThinButton21.TabIndex = 18;
             this.bunifuThinButton21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.bunifuThinButton21.Click += new System.EventHandler(this.bunifuThinButton21_Click);
             // 
             // bunifuMaterialTextbox4
             // 
@@ -396,9 +399,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(38, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 16);
+            this.label1.Size = new System.Drawing.Size(73, 16);
             this.label1.TabIndex = 7;
-            this.label1.Text = "Full Name";
+            this.label1.Text = "First Name";
             // 
             // bunifuElipse1
             // 

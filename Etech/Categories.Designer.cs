@@ -212,7 +212,13 @@
             this.bunifuDropdown1.BorderRadius = 3;
             this.bunifuDropdown1.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
             this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.items = new string[0];
+            this.bunifuDropdown1.items = new string[] {
+        "Graphic Cards",
+        "Processors/CPUs",
+        "Memory RAM",
+        "Motherboard",
+        "Powersupplies",
+        "Cases/Chassis"};
             this.bunifuDropdown1.Location = new System.Drawing.Point(327, 359);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
             this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
@@ -227,7 +233,10 @@
             this.bunifuDropdown2.BorderRadius = 3;
             this.bunifuDropdown2.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown2.items = new string[0];
+            this.bunifuDropdown2.items = new string[] {
+        "Solid State Drive",
+        "Internal Harddrives",
+        "External Harddrives"};
             this.bunifuDropdown2.Location = new System.Drawing.Point(574, 359);
             this.bunifuDropdown2.Name = "bunifuDropdown2";
             this.bunifuDropdown2.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
@@ -242,7 +251,9 @@
             this.bunifuDropdown3.BorderRadius = 3;
             this.bunifuDropdown3.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown3.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown3.items = new string[0];
+            this.bunifuDropdown3.items = new string[] {
+        "Monitor",
+        "Keyboard and Mouse"};
             this.bunifuDropdown3.Location = new System.Drawing.Point(824, 359);
             this.bunifuDropdown3.Name = "bunifuDropdown3";
             this.bunifuDropdown3.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
@@ -257,7 +268,11 @@
             this.bunifuDropdown4.BorderRadius = 3;
             this.bunifuDropdown4.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown4.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown4.items = new string[0];
+            this.bunifuDropdown4.items = new string[] {
+        "CPU Cooler",
+        "UPS",
+        "Cables",
+        "Fans"};
             this.bunifuDropdown4.Location = new System.Drawing.Point(327, 611);
             this.bunifuDropdown4.Name = "bunifuDropdown4";
             this.bunifuDropdown4.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
@@ -272,7 +287,11 @@
             this.bunifuDropdown5.BorderRadius = 3;
             this.bunifuDropdown5.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown5.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown5.items = new string[0];
+            this.bunifuDropdown5.items = new string[] {
+        "Modems",
+        "Routers",
+        "Adapters",
+        "Switches"};
             this.bunifuDropdown5.Location = new System.Drawing.Point(574, 611);
             this.bunifuDropdown5.Name = "bunifuDropdown5";
             this.bunifuDropdown5.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
@@ -308,7 +327,11 @@
             this.bunifuDropdown6.BorderRadius = 3;
             this.bunifuDropdown6.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown6.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown6.items = new string[0];
+            this.bunifuDropdown6.items = new string[] {
+        "Acer",
+        "HP",
+        "ASUS",
+        "Macbook"};
             this.bunifuDropdown6.Location = new System.Drawing.Point(824, 611);
             this.bunifuDropdown6.Name = "bunifuDropdown6";
             this.bunifuDropdown6.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
