@@ -99,7 +99,50 @@ namespace Etech
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
+            string imagename = "";
+            try
+            {
+                FileDialog fileDialog = new OpenFileDialog();
+                fileDialog.InitialDirectory = @":D\";
 
+                
+                fileDialog.Filter = "Image File (*.jpg;*.bmp;*.gif)|*.jpg;*.bmp;*.gif";
+
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+
+                {
+
+                    imagename = fileDialog.FileName;
+
+                    Bitmap newimg = new Bitmap(imagename);
+
+                    pictureBox1.Image = (Image)newimg;
+
+                }
+
+                fileDialog= null;
+
+            }
+
+            catch (System.ArgumentException ae)
+
+            {
+
+                imagename = " ";
+
+                MessageBox.Show(ae.Message.ToString());
+
+            }
+
+            catch (Exception ex)
+
+            {
+
+                MessageBox.Show(ex.Message.ToString());
+
+            }
+
+        
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)

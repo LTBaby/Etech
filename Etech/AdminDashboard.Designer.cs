@@ -611,7 +611,8 @@
             this.bunifuDropdown1.BorderRadius = 3;
             this.bunifuDropdown1.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.items = new string[0];
+            this.bunifuDropdown1.items = new string[] {
+        "Graphic Cards"};
             this.bunifuDropdown1.Location = new System.Drawing.Point(524, 108);
             this.bunifuDropdown1.Name = "bunifuDropdown1";
             this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
@@ -1793,9 +1794,9 @@
             this.bunifuFlatButton12.Iconimage_Selected = null;
             this.bunifuFlatButton12.IconMarginLeft = 0;
             this.bunifuFlatButton12.IconMarginRight = 0;
-            this.bunifuFlatButton12.IconRightVisible = true;
+            this.bunifuFlatButton12.IconRightVisible = false;
             this.bunifuFlatButton12.IconRightZoom = 0D;
-            this.bunifuFlatButton12.IconVisible = true;
+            this.bunifuFlatButton12.IconVisible = false;
             this.bunifuFlatButton12.IconZoom = 90D;
             this.bunifuFlatButton12.IsTab = false;
             this.bunifuFlatButton12.Location = new System.Drawing.Point(833, 570);

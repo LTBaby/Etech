@@ -58,5 +58,11 @@ namespace Etech
             Login login = new Login();
             login.Show();
         }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+            AdminDashboard adminDashboard = new AdminDashboard();
+            adminDashboard.Show();
+        }
     }
 }
