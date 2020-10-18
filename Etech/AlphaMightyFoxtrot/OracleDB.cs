@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using Oracle.DataAccess;
 using Oracle.ManagedDataAccess.Client;
-using System.Windows.Forms;
+using System.Configuration;
 
 namespace Etech.AlphaMightyFoxtrot
 {
@@ -75,6 +75,33 @@ namespace Etech.AlphaMightyFoxtrot
             }
             connection.Close();
             return err;
+        }
+        public List<string> SelectFromDBReader(string TableName, string Column, string [] parm)
+        {
+            List<string> results = new List<string>();
+            string Select = "SELECT " + Column + " FROM " + TableName;
+            OracleConnection connection = new OracleConnection("DATA SOURCE=localhost:1522/XE;PERSIST SECURITY INFO=True;USER ID=TREVOR;Password=itrw311");
+            OracleCommand command = new OracleCommand(Select);
+            command.Connection = connection;
+            connection.Open();
+            OracleDataReader DataReader = command.ExecuteReader();
+            if (DataReader.HasRows)
+            {
+                while(DataReader.Read())
+                {
+                    for(int i = 0; i < parm.Length; i++)
+                    {
+                        results.Add(DataReader[parm[i]].ToString());
+                    }
+                }
+                DataReader.Close();
+            }
+            else
+            {
+                DataReader.Close();
+            }
+            connection.Close();
+            return results;
         }
     }
 }

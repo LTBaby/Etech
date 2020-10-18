@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Etech
 {
@@ -24,7 +25,20 @@ namespace Etech
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            switch (tabControl1.SelectedIndex)
+            {
+                case 1 : AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+                    List<string> Categories = product.ProductCategories();
+                    bunifuDropdown1.Items.Clear();
+                    foreach (string name in Categories)
+                    {
+                        bunifuDropdown1.Items.Add(name);
+                        
+                    }
+                    
+                    break;
 
+            }
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -96,58 +110,89 @@ namespace Etech
         {
 
         }
+        public static byte[] ImageToByteArray(Image imageIn)
+        {
+            var ms = new MemoryStream();
+            imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Gif);
+            return ms.ToArray();
+        }
 
+        public static Image ByteArrayToImage(byte[] byteArrayIn)
+        {
+            var ms = new MemoryStream(byteArrayIn);
+            Image returnImage = Image.FromStream(ms);
+            return returnImage;
+        }
+        
+        string ImageUrl, ThumbnailUrl;
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            string imagename = "";
+            string ImageDestination = "";
+            string [] ImageName ;
             try
             {
                 FileDialog fileDialog = new OpenFileDialog();
-                fileDialog.InitialDirectory = @":D\";
+                fileDialog.InitialDirectory = @":C\";
 
-                
-                fileDialog.Filter = "Image File (*.jpg;*.bmp;*.gif)|*.jpg;*.bmp;*.gif";
+                fileDialog.Filter = "Image File (*.jpg;*.bmp;*.png;)|*.jpg;*.bmp;*.png;";
 
                 if (fileDialog.ShowDialog() == DialogResult.OK)
-
                 {
+                    ImageDestination = fileDialog.FileName;
+                    Image img = new Bitmap(ImageDestination);
 
-                    imagename = fileDialog.FileName;
-
-                    Bitmap newimg = new Bitmap(imagename);
-
-                    pictureBox1.Image = (Image)newimg;
-
+                    AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+                    ImageName = ImageDestination.Split('\\');
+                    ImageUrl = product.CopyProductImages(fileDialog.FileName, ImageName[ImageName.Length - 1]);
+                    pictureBox1.Image = img;
                 }
 
-                fileDialog= null;
-
+                fileDialog = null;
             }
-
             catch (System.ArgumentException ae)
-
             {
-
-                imagename = " ";
-
+                ImageDestination = " ";
                 MessageBox.Show(ae.Message.ToString());
-
             }
-
             catch (Exception ex)
-
             {
-
                 MessageBox.Show(ex.Message.ToString());
-
             }
-
-        
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
+            string ImageDestination = "";
+            string[] ImageName;
+            try
+            {
+                FileDialog fileDialog = new OpenFileDialog();
+                fileDialog.InitialDirectory = @":C\";
 
+                fileDialog.Filter = "Image File (*.jpg;*.bmp;*.png;)|*.jpg;*.bmp;*.png;" ;
+
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    ImageDestination = fileDialog.FileName;
+                    Image img = new Bitmap(ImageDestination);
+
+                    AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+                    ImageName = ImageDestination.Split('\\');
+                    ThumbnailUrl = product.CopyProductThumbnails(fileDialog.FileName, ImageName[ImageName.Length - 1]);
+                    pictureBox2.Image = img;
+                }
+
+                fileDialog = null;
+            }
+            catch (System.ArgumentException ae)
+            {
+                ImageDestination = " ";
+                MessageBox.Show(ae.Message.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
 
         private void bunifuGradientPanel8_Paint(object sender, PaintEventArgs e)
@@ -168,6 +213,28 @@ namespace Etech
         private void label32_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            product.Title = bunifuMetroTextbox1.Text;
+            product.Price = float.Parse(bunifuMetroTextbox2.Text);
+            product.Description = textBox1.Text;
+            var date = DateTime.Now;
+            string datetime = DateTime.Now.ToString("MM/dd/yyyy");
+            if (DateTime.TryParse(datetime, out date))
+            {
+                product.CreatedDate = date;
+            }
+            if (bunifuiOSSwitch1.Value){
+                product.Active = 't';
+            }else
+                product.Active = 'f';
+            product.CategoryId = bunifuDropdown1.selectedIndex + 1;
+            product.ImageUrl = ImageUrl;
+            product.ThumbnailUrl = ThumbnailUrl;
+            product.AddProduct();
         }
     }
 }
