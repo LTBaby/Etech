@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using Oracle.DataAccess;
+using Oracle.ManagedDataAccess.Client;
+using System.Configuration;
 
 namespace Etech
 {
@@ -218,6 +221,57 @@ namespace Etech
         private void AdminDashboard_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuTileButton6_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            List<string> Categories = product.GetProductsCategories();
+            bunifuDropdown5.Items.Clear();
+            foreach (string name in Categories)
+            {
+                bunifuDropdown5.Items.Add(name);
+
+            }
+
+            AlphaMightyFoxtrot.Promotion promotion = new AlphaMightyFoxtrot.Promotion();
+            bunifuDropdown6.Items.Clear();
+            List<string> Discount = promotion.GetPromotion();
+            foreach (string name in Discount)
+            {
+                bunifuDropdown6.Items.Add(name);
+            }
+            tabControl1.SelectedIndex = 5;
+        }
+
+        private void bunifuDropdown5_onItemSelected(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            product.CategoryId = bunifuDropdown5.selectedIndex + 1;
+            bunifuDropdown3.Items.Clear();
+            List<string> Titles = product.GetProductsForShopTitle();
+            foreach (string name in Titles)
+            {
+                bunifuDropdown3.Items.Add(name);
+
+            }
+        }
+
+        private void bunifuDropdown3_onItemSelected(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuDropdown6_onItemSelected(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton10_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Promotion promotion = new AlphaMightyFoxtrot.Promotion();
+            promotion.Discount = bunifuMetroTextbox7.Text;
+            promotion.AddPromotion();
         }
 
         private void bunifuFlatButton7_Click(object sender, EventArgs e)

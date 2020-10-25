@@ -150,6 +150,7 @@
     <Compile Include="AlphaMightyFoxtrot\Customer.cs" />
     <Compile Include="AlphaMightyFoxtrot\OracleDB.cs" />
     <Compile Include="AlphaMightyFoxtrot\Product.cs" />
+    <Compile Include="AlphaMightyFoxtrot\Promotion.cs" />
     <Compile Include="Categories.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -41,5 +41,17 @@ namespace Etech
         {
 
         }
+
+        private void bunifuDropdown1_onItemSelected(object sender, EventArgs e)
+        {
+            string Category = bunifuDropdown1.selectedValue;
+            AlphaMightyFoxtrot.OracleDB oracleDB = new AlphaMightyFoxtrot.OracleDB();
+            List<string> CategoryId = oracleDB.SelectFromWhereDB("Category", "Category_Id", "Name = '" + Category + "'");
+            Shop shop = new Shop();
+            shop.CategorySelected = CategoryId[0];
+            shop.CurrentCategoryBrowsing = Category;
+            this.Hide();
+            shop.Show();
+        }
     }
 }

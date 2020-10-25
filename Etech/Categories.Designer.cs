@@ -226,6 +226,7 @@
             this.bunifuDropdown1.selectedIndex = -1;
             this.bunifuDropdown1.Size = new System.Drawing.Size(202, 35);
             this.bunifuDropdown1.TabIndex = 17;
+            this.bunifuDropdown1.onItemSelected += new System.EventHandler(this.bunifuDropdown1_onItemSelected);
             // 
             // bunifuDropdown2
             // 

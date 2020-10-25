@@ -109,5 +109,14 @@ namespace Etech.AlphaMightyFoxtrot
             List<string> Price = oracleDB.SelectFromWhereDB(TableName, Column, "Category_Id = " + CategoryId.ToString());
             return Price;
         }
+
+        public List<string> GetProductsCategories()
+        {
+            OracleDB oracleDB = new OracleDB();
+            string TableName = "Category";
+            string Column = "Name";
+            List<string> Price = oracleDB.SelectFromDBReader(TableName, Column);
+            return Price;
+        }
     }
 }
