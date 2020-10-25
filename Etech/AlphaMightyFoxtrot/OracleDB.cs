@@ -54,7 +54,7 @@ namespace Etech.AlphaMightyFoxtrot
         {
             connection.Close();
         }
-        public bool SelectFromWhereDB(string TableName, string Column,string Where)
+        public bool SelectFromWhereDBLogin(string TableName, string Column,string Where)
         {
             bool err = false;
             string Select = "SELECT " + Column + " FROM " + TableName + " WHERE " + Where;
@@ -76,7 +76,7 @@ namespace Etech.AlphaMightyFoxtrot
             connection.Close();
             return err;
         }
-        public List<string> SelectFromDBReader(string TableName, string Column, string [] parm)
+        public List<string> SelectFromDBReader(string TableName, string Column)
         {
             List<string> results = new List<string>();
             string Select = "SELECT " + Column + " FROM " + TableName;
@@ -89,10 +89,7 @@ namespace Etech.AlphaMightyFoxtrot
             {
                 while(DataReader.Read())
                 {
-                    for(int i = 0; i < parm.Length; i++)
-                    {
-                        results.Add(DataReader[parm[i]].ToString());
-                    }
+                    results.Add(DataReader[0].ToString());
                 }
                 DataReader.Close();
             }
@@ -103,5 +100,31 @@ namespace Etech.AlphaMightyFoxtrot
             connection.Close();
             return results;
         }
+
+        public List<string> SelectFromWhereDB(string TableName, string Column, string Where)
+        {
+            List<string> results = new List<string>();
+            string Select = "SELECT " + Column + " FROM " + TableName + " WHERE " + Where;
+            OracleConnection connection = new OracleConnection("DATA SOURCE=localhost:1522/XE;PERSIST SECURITY INFO=True;USER ID=TREVOR;Password=itrw311");
+            OracleCommand command = new OracleCommand(Select);
+            command.Connection = connection;
+            connection.Open();
+            OracleDataReader DataReader = command.ExecuteReader();
+            if (DataReader.HasRows)
+            {
+                while (DataReader.Read())
+                {
+                    results.Add(DataReader[0].ToString());
+                }
+                DataReader.Close();
+            }
+            else
+            {
+                DataReader.Close();
+            }
+            connection.Close();
+            return results;
+        }
+
     }
 }

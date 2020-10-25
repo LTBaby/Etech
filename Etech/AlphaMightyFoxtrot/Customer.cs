@@ -36,7 +36,7 @@ namespace Etech.AlphaMightyFoxtrot
             string TableName = "Customer";
             string Column = "*";
             string Where = "Email_address = '" + EmailAddress + "' AND Password = '" + Password + "'";
-            bool err = oracleDB.SelectFromWhereDB(TableName, Column, Where);
+            bool err = oracleDB.SelectFromWhereDBLogin(TableName, Column, Where);
             return err;
         }
     }

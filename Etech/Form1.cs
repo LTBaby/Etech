@@ -64,5 +64,13 @@ namespace Etech
             AdminDashboard adminDashboard = new AdminDashboard();
             adminDashboard.Show();
         }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            Shop shop = new Shop();
+            shop.Show();
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            product.CategoryId = 1;
+        }
     }
 }

@@ -215,6 +215,11 @@ namespace Etech
 
         }
 
+        private void AdminDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();

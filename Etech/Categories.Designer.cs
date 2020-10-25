@@ -621,6 +621,7 @@
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Name = "Categories";
             this.Text = "Categories";
+            this.Load += new System.EventHandler(this.Categories_Load);
             this.bunifuGradientPanel1.ResumeLayout(false);
             this.bunifuGradientPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
