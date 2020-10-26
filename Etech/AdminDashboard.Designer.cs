@@ -100,7 +100,14 @@
             this.bunifuTileButton5 = new Bunifu.Framework.UI.BunifuTileButton();
             this.bunifuTileButton6 = new Bunifu.Framework.UI.BunifuTileButton();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.bunifuGradientPanel9 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.label36 = new System.Windows.Forms.Label();
+            this.bunifuDropdown6 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.bunifuFlatButton13 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label35 = new System.Windows.Forms.Label();
+            this.bunifuDropdown5 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.label30 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.bunifuFlatButton10 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label27 = new System.Windows.Forms.Label();
@@ -109,6 +116,17 @@
             this.bunifuMetroTextbox7 = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.bunifuGradientPanel10 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.label40 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.bunifuDropdown8 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.label39 = new System.Windows.Forms.Label();
+            this.bunifuDropdown9 = new Bunifu.Framework.UI.BunifuDropdown();
+            this.label38 = new System.Windows.Forms.Label();
+            this.bunifuFlatButton14 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label22 = new System.Windows.Forms.Label();
+            this.bunifuDropdown7 = new Bunifu.Framework.UI.BunifuDropdown();
             this.bunifuFlatButton11 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label23 = new System.Windows.Forms.Label();
             this.tabPage8 = new System.Windows.Forms.TabPage();
@@ -145,24 +163,7 @@
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.bunifuDropdown5 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.bunifuFlatButton13 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label36 = new System.Windows.Forms.Label();
-            this.bunifuDropdown6 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.label22 = new System.Windows.Forms.Label();
-            this.bunifuDropdown7 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuFlatButton14 = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.bunifuDropdown8 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.label39 = new System.Windows.Forms.Label();
-            this.bunifuDropdown9 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
+            this.bunifuFlatButton15 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuGradientPanel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -1312,6 +1313,13 @@
             this.tabPage6.Text = "tabPage6";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(2, 251);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(996, 10);
+            this.panel1.TabIndex = 27;
+            // 
             // bunifuGradientPanel9
             // 
             this.bunifuGradientPanel9.BackColor = System.Drawing.Color.White;
@@ -1339,6 +1347,110 @@
             this.bunifuGradientPanel9.Quality = 10;
             this.bunifuGradientPanel9.Size = new System.Drawing.Size(992, 615);
             this.bunifuGradientPanel9.TabIndex = 17;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.BackColor = System.Drawing.Color.Transparent;
+            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.White;
+            this.label36.Location = new System.Drawing.Point(77, 417);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(126, 16);
+            this.label36.TabIndex = 32;
+            this.label36.Text = "Selected Promotion";
+            // 
+            // bunifuDropdown6
+            // 
+            this.bunifuDropdown6.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown6.BorderRadius = 3;
+            this.bunifuDropdown6.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDropdown6.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown6.items = new string[0];
+            this.bunifuDropdown6.Location = new System.Drawing.Point(80, 448);
+            this.bunifuDropdown6.Name = "bunifuDropdown6";
+            this.bunifuDropdown6.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuDropdown6.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuDropdown6.selectedIndex = -1;
+            this.bunifuDropdown6.Size = new System.Drawing.Size(370, 38);
+            this.bunifuDropdown6.TabIndex = 31;
+            this.bunifuDropdown6.onItemSelected += new System.EventHandler(this.bunifuDropdown6_onItemSelected);
+            // 
+            // bunifuFlatButton13
+            // 
+            this.bunifuFlatButton13.Active = false;
+            this.bunifuFlatButton13.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuFlatButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton13.BorderRadius = 0;
+            this.bunifuFlatButton13.ButtonText = "Add Product on Promotion";
+            this.bunifuFlatButton13.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton13.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton13.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton13.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton13.Iconimage")));
+            this.bunifuFlatButton13.Iconimage_right = null;
+            this.bunifuFlatButton13.Iconimage_right_Selected = null;
+            this.bunifuFlatButton13.Iconimage_Selected = null;
+            this.bunifuFlatButton13.IconMarginLeft = 0;
+            this.bunifuFlatButton13.IconMarginRight = 0;
+            this.bunifuFlatButton13.IconRightVisible = false;
+            this.bunifuFlatButton13.IconRightZoom = 0D;
+            this.bunifuFlatButton13.IconVisible = false;
+            this.bunifuFlatButton13.IconZoom = 90D;
+            this.bunifuFlatButton13.IsTab = false;
+            this.bunifuFlatButton13.Location = new System.Drawing.Point(808, 564);
+            this.bunifuFlatButton13.Name = "bunifuFlatButton13";
+            this.bunifuFlatButton13.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuFlatButton13.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton13.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton13.selected = false;
+            this.bunifuFlatButton13.Size = new System.Drawing.Size(162, 48);
+            this.bunifuFlatButton13.TabIndex = 30;
+            this.bunifuFlatButton13.Text = "Add Product on Promotion";
+            this.bunifuFlatButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton13.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton13.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton13.Click += new System.EventHandler(this.bunifuFlatButton13_Click);
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.BackColor = System.Drawing.Color.Transparent;
+            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.White;
+            this.label35.Location = new System.Drawing.Point(77, 330);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(169, 16);
+            this.label35.TabIndex = 29;
+            this.label35.Text = "Selected Product Category";
+            // 
+            // bunifuDropdown5
+            // 
+            this.bunifuDropdown5.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown5.BorderRadius = 3;
+            this.bunifuDropdown5.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDropdown5.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown5.items = new string[0];
+            this.bunifuDropdown5.Location = new System.Drawing.Point(80, 361);
+            this.bunifuDropdown5.Name = "bunifuDropdown5";
+            this.bunifuDropdown5.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuDropdown5.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuDropdown5.selectedIndex = -1;
+            this.bunifuDropdown5.Size = new System.Drawing.Size(370, 38);
+            this.bunifuDropdown5.TabIndex = 28;
+            this.bunifuDropdown5.onItemSelected += new System.EventHandler(this.bunifuDropdown5_onItemSelected);
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.BackColor = System.Drawing.Color.Transparent;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.White;
+            this.label30.Location = new System.Drawing.Point(3, 273);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(403, 37);
+            this.label30.TabIndex = 27;
+            this.label30.Text = "Add Product On Promotion";
             // 
             // label21
             // 
@@ -1464,6 +1576,7 @@
             this.bunifuGradientPanel10.BackColor = System.Drawing.Color.White;
             this.bunifuGradientPanel10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel10.BackgroundImage")));
             this.bunifuGradientPanel10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel10.Controls.Add(this.bunifuFlatButton15);
             this.bunifuGradientPanel10.Controls.Add(this.label40);
             this.bunifuGradientPanel10.Controls.Add(this.textBox5);
             this.bunifuGradientPanel10.Controls.Add(this.label37);
@@ -1487,6 +1600,161 @@
             this.bunifuGradientPanel10.Quality = 10;
             this.bunifuGradientPanel10.Size = new System.Drawing.Size(992, 615);
             this.bunifuGradientPanel10.TabIndex = 17;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.BackColor = System.Drawing.Color.Transparent;
+            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.White;
+            this.label40.Location = new System.Drawing.Point(660, 336);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(123, 16);
+            this.label40.TabIndex = 42;
+            this.label40.Text = "All promotion guide";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(663, 364);
+            this.textBox5.Multiline = true;
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(307, 199);
+            this.textBox5.TabIndex = 41;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.BackColor = System.Drawing.Color.Transparent;
+            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.White;
+            this.label37.Location = new System.Drawing.Point(74, 384);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(111, 16);
+            this.label37.TabIndex = 40;
+            this.label37.Text = "Selected Product";
+            // 
+            // bunifuDropdown8
+            // 
+            this.bunifuDropdown8.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown8.BorderRadius = 3;
+            this.bunifuDropdown8.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDropdown8.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown8.items = new string[0];
+            this.bunifuDropdown8.Location = new System.Drawing.Point(77, 415);
+            this.bunifuDropdown8.Name = "bunifuDropdown8";
+            this.bunifuDropdown8.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuDropdown8.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuDropdown8.selectedIndex = -1;
+            this.bunifuDropdown8.Size = new System.Drawing.Size(370, 38);
+            this.bunifuDropdown8.TabIndex = 39;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.BackColor = System.Drawing.Color.Transparent;
+            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.White;
+            this.label39.Location = new System.Drawing.Point(74, 494);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(111, 16);
+            this.label39.TabIndex = 38;
+            this.label39.Text = "Selected Product";
+            // 
+            // bunifuDropdown9
+            // 
+            this.bunifuDropdown9.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown9.BorderRadius = 3;
+            this.bunifuDropdown9.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDropdown9.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown9.items = new string[0];
+            this.bunifuDropdown9.Location = new System.Drawing.Point(77, 525);
+            this.bunifuDropdown9.Name = "bunifuDropdown9";
+            this.bunifuDropdown9.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuDropdown9.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuDropdown9.selectedIndex = -1;
+            this.bunifuDropdown9.Size = new System.Drawing.Size(370, 38);
+            this.bunifuDropdown9.TabIndex = 37;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.BackColor = System.Drawing.Color.Transparent;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.White;
+            this.label38.Location = new System.Drawing.Point(6, 315);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(483, 37);
+            this.label38.TabIndex = 36;
+            this.label38.Text = "Remove Promotion from Product";
+            // 
+            // bunifuFlatButton14
+            // 
+            this.bunifuFlatButton14.Active = false;
+            this.bunifuFlatButton14.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuFlatButton14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton14.BorderRadius = 0;
+            this.bunifuFlatButton14.ButtonText = "Remove Product from Promotion";
+            this.bunifuFlatButton14.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton14.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton14.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton14.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton14.Iconimage")));
+            this.bunifuFlatButton14.Iconimage_right = null;
+            this.bunifuFlatButton14.Iconimage_right_Selected = null;
+            this.bunifuFlatButton14.Iconimage_Selected = null;
+            this.bunifuFlatButton14.IconMarginLeft = 0;
+            this.bunifuFlatButton14.IconMarginRight = 0;
+            this.bunifuFlatButton14.IconRightVisible = false;
+            this.bunifuFlatButton14.IconRightZoom = 0D;
+            this.bunifuFlatButton14.IconVisible = false;
+            this.bunifuFlatButton14.IconZoom = 90D;
+            this.bunifuFlatButton14.IsTab = false;
+            this.bunifuFlatButton14.Location = new System.Drawing.Point(816, 570);
+            this.bunifuFlatButton14.Name = "bunifuFlatButton14";
+            this.bunifuFlatButton14.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuFlatButton14.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton14.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton14.selected = false;
+            this.bunifuFlatButton14.Size = new System.Drawing.Size(154, 40);
+            this.bunifuFlatButton14.TabIndex = 33;
+            this.bunifuFlatButton14.Text = "Remove Product from Promotion";
+            this.bunifuFlatButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton14.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton14.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(-2, 302);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(996, 10);
+            this.panel2.TabIndex = 32;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.BackColor = System.Drawing.Color.Transparent;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.White;
+            this.label22.Location = new System.Drawing.Point(74, 56);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(195, 16);
+            this.label22.TabIndex = 31;
+            this.label22.Text = "Selected Promotion to Remove";
+            // 
+            // bunifuDropdown7
+            // 
+            this.bunifuDropdown7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuDropdown7.BorderRadius = 3;
+            this.bunifuDropdown7.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuDropdown7.ForeColor = System.Drawing.Color.White;
+            this.bunifuDropdown7.items = new string[0];
+            this.bunifuDropdown7.Location = new System.Drawing.Point(77, 87);
+            this.bunifuDropdown7.Name = "bunifuDropdown7";
+            this.bunifuDropdown7.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuDropdown7.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuDropdown7.selectedIndex = -1;
+            this.bunifuDropdown7.Size = new System.Drawing.Size(370, 38);
+            this.bunifuDropdown7.TabIndex = 30;
             // 
             // bunifuFlatButton11
             // 
@@ -2189,270 +2457,40 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Login";
             // 
-            // panel1
+            // bunifuFlatButton15
             // 
-            this.panel1.Location = new System.Drawing.Point(2, 251);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(996, 10);
-            this.panel1.TabIndex = 27;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.BackColor = System.Drawing.Color.Transparent;
-            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.White;
-            this.label30.Location = new System.Drawing.Point(3, 273);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(403, 37);
-            this.label30.TabIndex = 27;
-            this.label30.Text = "Add Product On Promotion";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.BackColor = System.Drawing.Color.Transparent;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.White;
-            this.label35.Location = new System.Drawing.Point(77, 330);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(169, 16);
-            this.label35.TabIndex = 29;
-            this.label35.Text = "Selected Product Category";
-            // 
-            // bunifuDropdown5
-            // 
-            this.bunifuDropdown5.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown5.BorderRadius = 3;
-            this.bunifuDropdown5.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown5.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown5.items = new string[0];
-            this.bunifuDropdown5.Location = new System.Drawing.Point(80, 361);
-            this.bunifuDropdown5.Name = "bunifuDropdown5";
-            this.bunifuDropdown5.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuDropdown5.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown5.selectedIndex = -1;
-            this.bunifuDropdown5.Size = new System.Drawing.Size(370, 38);
-            this.bunifuDropdown5.TabIndex = 28;
-            this.bunifuDropdown5.onItemSelected += new System.EventHandler(this.bunifuDropdown5_onItemSelected);
-            // 
-            // bunifuFlatButton13
-            // 
-            this.bunifuFlatButton13.Active = false;
-            this.bunifuFlatButton13.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuFlatButton13.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton13.BorderRadius = 0;
-            this.bunifuFlatButton13.ButtonText = "Add Product on Promotion";
-            this.bunifuFlatButton13.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton13.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton13.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton13.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton13.Iconimage")));
-            this.bunifuFlatButton13.Iconimage_right = null;
-            this.bunifuFlatButton13.Iconimage_right_Selected = null;
-            this.bunifuFlatButton13.Iconimage_Selected = null;
-            this.bunifuFlatButton13.IconMarginLeft = 0;
-            this.bunifuFlatButton13.IconMarginRight = 0;
-            this.bunifuFlatButton13.IconRightVisible = false;
-            this.bunifuFlatButton13.IconRightZoom = 0D;
-            this.bunifuFlatButton13.IconVisible = false;
-            this.bunifuFlatButton13.IconZoom = 90D;
-            this.bunifuFlatButton13.IsTab = false;
-            this.bunifuFlatButton13.Location = new System.Drawing.Point(808, 564);
-            this.bunifuFlatButton13.Name = "bunifuFlatButton13";
-            this.bunifuFlatButton13.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuFlatButton13.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton13.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton13.selected = false;
-            this.bunifuFlatButton13.Size = new System.Drawing.Size(162, 48);
-            this.bunifuFlatButton13.TabIndex = 30;
-            this.bunifuFlatButton13.Text = "Add Product on Promotion";
-            this.bunifuFlatButton13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton13.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton13.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.BackColor = System.Drawing.Color.Transparent;
-            this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.White;
-            this.label36.Location = new System.Drawing.Point(77, 417);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(126, 16);
-            this.label36.TabIndex = 32;
-            this.label36.Text = "Selected Promotion";
-            // 
-            // bunifuDropdown6
-            // 
-            this.bunifuDropdown6.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown6.BorderRadius = 3;
-            this.bunifuDropdown6.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown6.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown6.items = new string[0];
-            this.bunifuDropdown6.Location = new System.Drawing.Point(80, 448);
-            this.bunifuDropdown6.Name = "bunifuDropdown6";
-            this.bunifuDropdown6.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuDropdown6.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown6.selectedIndex = -1;
-            this.bunifuDropdown6.Size = new System.Drawing.Size(370, 38);
-            this.bunifuDropdown6.TabIndex = 31;
-            this.bunifuDropdown6.onItemSelected += new System.EventHandler(this.bunifuDropdown6_onItemSelected);
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.White;
-            this.label22.Location = new System.Drawing.Point(74, 56);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(195, 16);
-            this.label22.TabIndex = 31;
-            this.label22.Text = "Selected Promotion to Remove";
-            // 
-            // bunifuDropdown7
-            // 
-            this.bunifuDropdown7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown7.BorderRadius = 3;
-            this.bunifuDropdown7.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown7.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown7.items = new string[0];
-            this.bunifuDropdown7.Location = new System.Drawing.Point(77, 87);
-            this.bunifuDropdown7.Name = "bunifuDropdown7";
-            this.bunifuDropdown7.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuDropdown7.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown7.selectedIndex = -1;
-            this.bunifuDropdown7.Size = new System.Drawing.Size(370, 38);
-            this.bunifuDropdown7.TabIndex = 30;
-            // 
-            // panel2
-            // 
-            this.panel2.Location = new System.Drawing.Point(-2, 302);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(996, 10);
-            this.panel2.TabIndex = 32;
-            // 
-            // bunifuFlatButton14
-            // 
-            this.bunifuFlatButton14.Active = false;
-            this.bunifuFlatButton14.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuFlatButton14.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton14.BorderRadius = 0;
-            this.bunifuFlatButton14.ButtonText = "Remove Product from Promotion";
-            this.bunifuFlatButton14.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton14.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton14.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton14.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton14.Iconimage")));
-            this.bunifuFlatButton14.Iconimage_right = null;
-            this.bunifuFlatButton14.Iconimage_right_Selected = null;
-            this.bunifuFlatButton14.Iconimage_Selected = null;
-            this.bunifuFlatButton14.IconMarginLeft = 0;
-            this.bunifuFlatButton14.IconMarginRight = 0;
-            this.bunifuFlatButton14.IconRightVisible = false;
-            this.bunifuFlatButton14.IconRightZoom = 0D;
-            this.bunifuFlatButton14.IconVisible = false;
-            this.bunifuFlatButton14.IconZoom = 90D;
-            this.bunifuFlatButton14.IsTab = false;
-            this.bunifuFlatButton14.Location = new System.Drawing.Point(816, 572);
-            this.bunifuFlatButton14.Name = "bunifuFlatButton14";
-            this.bunifuFlatButton14.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuFlatButton14.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton14.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton14.selected = false;
-            this.bunifuFlatButton14.Size = new System.Drawing.Size(154, 40);
-            this.bunifuFlatButton14.TabIndex = 33;
-            this.bunifuFlatButton14.Text = "Remove Product from Promotion";
-            this.bunifuFlatButton14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton14.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton14.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.BackColor = System.Drawing.Color.Transparent;
-            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.White;
-            this.label38.Location = new System.Drawing.Point(6, 315);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(483, 37);
-            this.label38.TabIndex = 36;
-            this.label38.Text = "Remove Promotion from Product";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.BackColor = System.Drawing.Color.Transparent;
-            this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.White;
-            this.label37.Location = new System.Drawing.Point(74, 384);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(111, 16);
-            this.label37.TabIndex = 40;
-            this.label37.Text = "Selected Product";
-            // 
-            // bunifuDropdown8
-            // 
-            this.bunifuDropdown8.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown8.BorderRadius = 3;
-            this.bunifuDropdown8.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown8.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown8.items = new string[0];
-            this.bunifuDropdown8.Location = new System.Drawing.Point(77, 415);
-            this.bunifuDropdown8.Name = "bunifuDropdown8";
-            this.bunifuDropdown8.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuDropdown8.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown8.selectedIndex = -1;
-            this.bunifuDropdown8.Size = new System.Drawing.Size(370, 38);
-            this.bunifuDropdown8.TabIndex = 39;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.BackColor = System.Drawing.Color.Transparent;
-            this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.ForeColor = System.Drawing.Color.White;
-            this.label39.Location = new System.Drawing.Point(74, 494);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(111, 16);
-            this.label39.TabIndex = 38;
-            this.label39.Text = "Selected Product";
-            // 
-            // bunifuDropdown9
-            // 
-            this.bunifuDropdown9.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuDropdown9.BorderRadius = 3;
-            this.bunifuDropdown9.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuDropdown9.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown9.items = new string[0];
-            this.bunifuDropdown9.Location = new System.Drawing.Point(77, 525);
-            this.bunifuDropdown9.Name = "bunifuDropdown9";
-            this.bunifuDropdown9.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
-            this.bunifuDropdown9.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown9.selectedIndex = -1;
-            this.bunifuDropdown9.Size = new System.Drawing.Size(370, 38);
-            this.bunifuDropdown9.TabIndex = 37;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(663, 364);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(307, 199);
-            this.textBox5.TabIndex = 41;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.BackColor = System.Drawing.Color.Transparent;
-            this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.White;
-            this.label40.Location = new System.Drawing.Point(660, 336);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(123, 16);
-            this.label40.TabIndex = 42;
-            this.label40.Text = "All promotion guide";
+            this.bunifuFlatButton15.Active = false;
+            this.bunifuFlatButton15.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuFlatButton15.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton15.BorderRadius = 0;
+            this.bunifuFlatButton15.ButtonText = "Remove All Promotion";
+            this.bunifuFlatButton15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton15.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton15.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton15.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton15.Iconimage")));
+            this.bunifuFlatButton15.Iconimage_right = null;
+            this.bunifuFlatButton15.Iconimage_right_Selected = null;
+            this.bunifuFlatButton15.Iconimage_Selected = null;
+            this.bunifuFlatButton15.IconMarginLeft = 0;
+            this.bunifuFlatButton15.IconMarginRight = 0;
+            this.bunifuFlatButton15.IconRightVisible = false;
+            this.bunifuFlatButton15.IconRightZoom = 0D;
+            this.bunifuFlatButton15.IconVisible = false;
+            this.bunifuFlatButton15.IconZoom = 90D;
+            this.bunifuFlatButton15.IsTab = false;
+            this.bunifuFlatButton15.Location = new System.Drawing.Point(601, 570);
+            this.bunifuFlatButton15.Name = "bunifuFlatButton15";
+            this.bunifuFlatButton15.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(83)))), ((int)(((byte)(92)))));
+            this.bunifuFlatButton15.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton15.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton15.selected = false;
+            this.bunifuFlatButton15.Size = new System.Drawing.Size(196, 40);
+            this.bunifuFlatButton15.TabIndex = 43;
+            this.bunifuFlatButton15.Text = "Remove All Promotion";
+            this.bunifuFlatButton15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton15.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton15.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
             // AdminDashboard
             // 
@@ -2638,5 +2676,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label22;
         private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown7;
+        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton15;
     }
 }

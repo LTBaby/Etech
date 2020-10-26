@@ -274,6 +274,23 @@ namespace Etech
             promotion.AddPromotion();
         }
 
+        private void bunifuFlatButton13_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Promotion promotion = new AlphaMightyFoxtrot.Promotion();
+            if (bunifuDropdown3.selectedIndex < 0)
+            {
+                promotion.CategoryId = (bunifuDropdown5.selectedIndex + 1).ToString();
+                promotion.PromotionId = bunifuDropdown6.selectedIndex + 1;
+                promotion.AddProductsOnPromotionOfACategory();
+            }else
+            {
+                //promotion.ProductId = (bunifuDropdown3.selectedIndex + 1).ToString();
+                promotion.ProductId = 14.ToString();
+                promotion.PromotionId = bunifuDropdown6.selectedIndex + 1;
+                promotion.AddProductsOnPromotion();
+            }
+        }
+
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();

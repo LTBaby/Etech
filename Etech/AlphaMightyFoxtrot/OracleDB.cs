@@ -45,6 +45,26 @@ namespace Etech.AlphaMightyFoxtrot
             return err;
         }
 
+        public string UpdateWhereDB(string tablename, string values, string where)
+        {
+            string err = "";
+            string sInsertquery = "UPDATE " + tablename + " SET " + values + " WHERE " + where;
+
+            OracleCommand command = new OracleCommand(sInsertquery);
+            command.Connection = connection;
+            try
+            {
+                OpenDB();
+                command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                err = ex.ToString();
+            }
+            CloseDB();
+            return err;
+        }
+
         public void DeleteFromDB(string TableName, string VSalues)
         {
             //
