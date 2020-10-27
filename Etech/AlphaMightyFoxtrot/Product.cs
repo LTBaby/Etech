@@ -13,6 +13,7 @@ namespace Etech.AlphaMightyFoxtrot
     {
         public string Title { get; set; }
         public int CategoryId { get; set; }
+        public int ProductId { get; set; }
         public float Price { get; set; }
         public DateTime CreatedDate { get; set; }
         public DateTime UpdateDate { get; set; }
@@ -44,6 +45,16 @@ namespace Etech.AlphaMightyFoxtrot
             return err;
         }
 
+        public string UpdateProduct()
+        {
+            OracleDB oracleDB = new OracleDB();
+            string TableName = "Product";
+            string Values ="Category_Id = " + CategoryId.ToString() + ", Title = '" + Title + "', Price = " + Price + ", Update_Date = TO_DATE('" + UpdateDate.ToString("MM/dd/yyyy") + "','mm/dd/yyyy')" + ", Active = '" + Active + "', Description = '" + Description + "', ImageUrl = '" + ImageUrl + "', ThumbnailUrl = '" + ThumbnailUrl + "'";
+            string Where = "Product_Id = " + ProductId.ToString();
+            string err = oracleDB.UpdateWhereDB(TableName, Values, Where);
+            return err;
+        }
+
         public string CopyProductImages(string sourcePath, string ImageName)
         {
              File.Copy(sourcePath, @"ProductImages/" + ImageName, true);
@@ -65,49 +76,58 @@ namespace Etech.AlphaMightyFoxtrot
             return result;
         }
 
-        public List<string> GetProductsForShopTitle()
+        public List<string> GetProductsForShopTitle(string Where, int Id)
         {
             OracleDB oracleDB = new OracleDB();
             string TableName = "Product";
             string Column = "Title";
-            List<string> Title = oracleDB.SelectFromWhereDB(TableName, Column, "Category_Id = " + CategoryId.ToString());
+            List<string> Title = oracleDB.SelectFromWhereDB(TableName, Column, Where + Id.ToString());
             return Title;
         }
 
-        public List<string> GetProductsForShopThumbnailUrl()
+        public List<string> GetProductsForShopThumbnailUrl(string Where, int Id)
         {
             OracleDB oracleDB = new OracleDB();
             string TableName = "Product";
             string Column = "ThumbnailUrl";
-            List<string> ThumbnailUrl = oracleDB.SelectFromWhereDB(TableName, Column, "Category_Id = " + CategoryId.ToString());
+            List<string> ThumbnailUrl = oracleDB.SelectFromWhereDB(TableName, Column, Where + Id.ToString());
             return ThumbnailUrl;
         }
 
-        public List<string> GetProductsForShopImageUrl()
+        public List<string> GetProductsForShopImageUrl(string Where, int Id)
         {
             OracleDB oracleDB = new OracleDB();
             string TableName = "Product";
             string Column = "ImageUrl";
-            List<string> ImageUrl = oracleDB.SelectFromWhereDB(TableName, Column, "Category_Id = " + CategoryId.ToString());
+            List<string> ImageUrl = oracleDB.SelectFromWhereDB(TableName, Column, Where + Id.ToString());
             return ImageUrl;
         }
 
-        public List<string> GetProductsForShopDescription()
+        public List<string> GetProductsForShopDescription(string Where, int Id)
         {
             OracleDB oracleDB = new OracleDB();
             string TableName = "Product";
             string Column = "Description";
-            List<string> Description = oracleDB.SelectFromWhereDB(TableName, Column, "Category_Id = " + CategoryId.ToString());
+            List<string> Description = oracleDB.SelectFromWhereDB(TableName, Column, Where + Id.ToString());
             return Description;
         }
 
-        public List<string> GetProductsForShopPrice()
+        public List<string> GetProductsForShopPrice(string Where, int Id)
         {
             OracleDB oracleDB = new OracleDB();
             string TableName = "Product";
             string Column = "Price";
-            List<string> Price = oracleDB.SelectFromWhereDB(TableName, Column, "Category_Id = " + CategoryId.ToString());
+            List<string> Price = oracleDB.SelectFromWhereDB(TableName, Column, Where + Id.ToString());
             return Price;
+        }
+
+        public List<string> GetProductsForShopActive(string Where, int Id)
+        {
+            OracleDB oracleDB = new OracleDB();
+            string TableName = "Product";
+            string Column = "Active";
+            List<string> Active = oracleDB.SelectFromWhereDB(TableName, Column, Where + Id.ToString());
+            return Active;
         }
 
         public List<string> GetProductsCategories()
@@ -115,8 +135,26 @@ namespace Etech.AlphaMightyFoxtrot
             OracleDB oracleDB = new OracleDB();
             string TableName = "Category";
             string Column = "Name";
-            List<string> Price = oracleDB.SelectFromDBReader(TableName, Column);
-            return Price;
+            List<string> Category = oracleDB.SelectFromDBReader(TableName, Column);
+            return Category;
         }
+
+        public List<string> GetProductsId(string Where, int Id)
+        {
+            OracleDB oracleDB = new OracleDB();
+            string TableName = "Product";
+            string Column = "Product_Id";
+            List<string> ProductsId = oracleDB.SelectFromWhereDB(TableName, Column, Where + Id.ToString());
+            return ProductsId;
+        }
+
+        //public List<string> GetProductsById(int Id)
+        //{
+        //    OracleDB oracleDB = new OracleDB();
+        //    string TableName = "Product";
+        //    string Column = "*";
+        //    List<string> ProductsInfo = oracleDB.SelectFromWhereDB(TableName, Column, "Product_Id = " + Id.ToString());
+        //    return ProductsInfo;
+        //}
     }
 }

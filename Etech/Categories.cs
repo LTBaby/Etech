@@ -44,7 +44,36 @@ namespace Etech
 
         private void bunifuDropdown1_onItemSelected(object sender, EventArgs e)
         {
-            string Category = bunifuDropdown1.selectedValue;
+            SelectCategoryAndDisplayShop(bunifuDropdown1.selectedValue);
+        }
+
+        private void bunifuDropdown2_onItemSelected(object sender, EventArgs e)
+        {
+            SelectCategoryAndDisplayShop(bunifuDropdown2.selectedValue);
+        }
+
+        private void bunifuDropdown3_onItemSelected(object sender, EventArgs e)
+        {
+            SelectCategoryAndDisplayShop(bunifuDropdown3.selectedValue);
+        }
+
+        private void bunifuDropdown4_onItemSelected(object sender, EventArgs e)
+        {
+            SelectCategoryAndDisplayShop(bunifuDropdown4.selectedValue);
+        }
+
+        private void bunifuDropdown5_onItemSelected(object sender, EventArgs e)
+        {
+            SelectCategoryAndDisplayShop(bunifuDropdown5.selectedValue);
+        }
+
+        private void bunifuDropdown6_onItemSelected(object sender, EventArgs e)
+        {
+            SelectCategoryAndDisplayShop(bunifuDropdown6.selectedValue);
+
+        }
+        public void SelectCategoryAndDisplayShop(string Category)
+        {
             AlphaMightyFoxtrot.OracleDB oracleDB = new AlphaMightyFoxtrot.OracleDB();
             List<string> CategoryId = oracleDB.SelectFromWhereDB("Category", "Category_Id", "Name = '" + Category + "'");
             Shop shop = new Shop();

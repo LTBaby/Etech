@@ -231,7 +231,6 @@ namespace Etech
             foreach (string name in Categories)
             {
                 bunifuDropdown5.Items.Add(name);
-
             }
 
             AlphaMightyFoxtrot.Promotion promotion = new AlphaMightyFoxtrot.Promotion();
@@ -247,13 +246,11 @@ namespace Etech
         private void bunifuDropdown5_onItemSelected(object sender, EventArgs e)
         {
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
-            product.CategoryId = bunifuDropdown5.selectedIndex + 1;
             bunifuDropdown3.Items.Clear();
-            List<string> Titles = product.GetProductsForShopTitle();
+            List<string> Titles = product.GetProductsForShopTitle("Category_Id = ", bunifuDropdown5.selectedIndex + 1);
             foreach (string name in Titles)
             {
                 bunifuDropdown3.Items.Add(name);
-
             }
         }
 
@@ -293,25 +290,38 @@ namespace Etech
 
         private void bunifuTileButton1_Click(object sender, EventArgs e)
         {
-
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            List<string> Categories = product.GetProductsCategories();
+            bunifuDropdown1.Items.Clear();
+            foreach (string name in Categories)
+            {
+                bunifuDropdown1.Items.Add(name);
+            }
+            tabControl1.SelectedIndex = 1;
         }
 
         private void bunifuDropdown10_onItemSelected(object sender, EventArgs e)
         {
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
-            product.CategoryId = bunifuDropdown10.selectedIndex + 1;
             bunifuDropdown11.Items.Clear();
-            List<string> Titles = product.GetProductsForShopTitle();
+            List<string> Titles = product.GetProductsForShopTitle("Category_Id = ", bunifuDropdown10.selectedIndex + 1);
             foreach (string name in Titles)
             {
                 bunifuDropdown11.Items.Add(name);
-
             }
         }
 
         private void bunifuTileButton3_Click(object sender, EventArgs e)
         {
-
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            List<string> Categories = product.GetProductsCategories();
+            bunifuDropdown12.Items.Clear();
+            foreach (string name in Categories)
+            {
+                bunifuDropdown12.Items.Add(name);
+                bunifuDropdown2.Items.Add(name);
+            }
+            tabControl1.SelectedIndex = 3;
         }
 
         private void bunifuTileButton2_Click(object sender, EventArgs e)
@@ -322,7 +332,6 @@ namespace Etech
             foreach (string name in Categories)
             {
                 bunifuDropdown10.Items.Add(name);
-
             }
             tabControl1.SelectedIndex = 2;
         }
@@ -330,14 +339,161 @@ namespace Etech
         private void bunifuDropdown11_onItemSelected(object sender, EventArgs e)
         {
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
-            product.CategoryId = bunifuDropdown10.selectedIndex + 1;
-            List<string> ProductThumbnail = product.GetProductsForShopThumbnailUrl();
+            List<string> ProductThumbnail = product.GetProductsForShopThumbnailUrl("Category_Id = ", bunifuDropdown10.selectedIndex + 1);
             ThumbnailUrl = ProductThumbnail[bunifuDropdown11.selectedIndex];
-            List<string> ProductImage = product.GetProductsForShopImageUrl();
+            List<string> ProductImage = product.GetProductsForShopImageUrl("Category_Id = ", bunifuDropdown10.selectedIndex + 1);
             ImageUrl = ProductImage[bunifuDropdown11.selectedIndex];
 
             pictureBox5.Image = Image.FromFile(@ThumbnailUrl);
             pictureBox6.Image = Image.FromFile(@ImageUrl);
+        }
+
+        private void bunifuDropdown12_onItemSelected(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            bunifuDropdown13.Items.Clear();
+            List<string> Titles = product.GetProductsForShopTitle("Category_Id = ", bunifuDropdown12.selectedIndex + 1);
+            foreach (string name in Titles)
+            {
+                bunifuDropdown13.Items.Add(name);
+            }
+        }
+
+        private void bunifuDropdown13_onItemSelected(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            List<string> ProductIdList = product.GetProductsId("Category_Id = ", bunifuDropdown12.selectedIndex + 1);
+
+            List<string> ProductTitle = product.GetProductsForShopTitle("Product_Id = ", int.Parse(ProductIdList[bunifuDropdown13.selectedIndex]));
+            List<string> ProductPrice = product.GetProductsForShopPrice("Product_Id = ", int.Parse(ProductIdList[bunifuDropdown13.selectedIndex]));
+            List<string> ProductDescription = product.GetProductsForShopDescription("Product_Id = ", int.Parse(ProductIdList[bunifuDropdown13.selectedIndex]));
+            List<string> ProductActive = product.GetProductsForShopActive("Product_Id = ", int.Parse(ProductIdList[bunifuDropdown13.selectedIndex]));
+            List<string> ProductThumbnailUrl = product.GetProductsForShopThumbnailUrl("Product_Id = ", int.Parse(ProductIdList[bunifuDropdown13.selectedIndex]));
+            List<string> ProductImageUrl = product.GetProductsForShopImageUrl("Product_Id = ", int.Parse(ProductIdList[bunifuDropdown13.selectedIndex]));
+
+
+            bunifuMetroTextbox5.Text = ProductTitle[0];
+            bunifuMetroTextbox4.Text = ProductPrice[0];
+            textBox2.Text = ProductDescription[0];
+            bunifuDropdown2.selectedIndex = bunifuDropdown12.selectedIndex;
+            if (ProductActive[0] == "t")
+            {
+                bunifuiOSSwitch1.Value = true;
+            }
+            else
+                bunifuiOSSwitch1.Value = false;
+            ThumbnailUrl = ProductThumbnailUrl[0];
+            ImageUrl = ProductImageUrl[0];
+            pictureBox3.Image = Image.FromFile(@ThumbnailUrl);
+            pictureBox4.Image = Image.FromFile(@ImageUrl);
+        }
+
+        private void bunifuFlatButton9_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            product.Title = bunifuMetroTextbox5.Text;
+            product.Price = float.Parse(bunifuMetroTextbox4.Text);
+            product.Description = textBox2.Text;
+            var date = DateTime.Now;
+            string datetime = DateTime.Now.ToString("MM/dd/yyyy");
+            if (DateTime.TryParse(datetime, out date))
+            {
+                product.UpdateDate = date;
+            }
+            if (bunifuiOSSwitch2.Value)
+            {
+                product.Active = 't';
+            }
+            else
+                product.Active = 'f';
+            product.CategoryId = bunifuDropdown2.selectedIndex + 1;
+            product.ImageUrl = ImageUrl;
+            product.ThumbnailUrl = ThumbnailUrl;
+
+            List<string> ProductIdList = product.GetProductsId("Category_Id = ", bunifuDropdown12.selectedIndex + 1);
+            product.ProductId = int.Parse(ProductIdList[bunifuDropdown13.selectedIndex]);
+
+            product.UpdateProduct();
+        }
+
+        private void bunifuFlatButton1_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 0;
+        }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+            tabControl1.SelectedIndex = 4;
+        }
+
+        private void bunifuThinButton24_Click(object sender, EventArgs e)
+        {
+            string ImageDestination = "";
+            string[] ImageName;
+            try
+            {
+                FileDialog fileDialog = new OpenFileDialog();
+                fileDialog.InitialDirectory = @":C\";
+
+                fileDialog.Filter = "Image File (*.jpg;*.bmp;*.png;)|*.jpg;*.bmp;*.png;";
+
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    ImageDestination = fileDialog.FileName;
+                    Image img = new Bitmap(ImageDestination);
+
+                    AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+                    ImageName = ImageDestination.Split('\\');
+                    ImageUrl = product.CopyProductImages(fileDialog.FileName, ImageName[ImageName.Length - 1]);
+                    pictureBox4.Image = img;
+                }
+
+                fileDialog = null;
+            }
+            catch (System.ArgumentException ae)
+            {
+                ImageDestination = " ";
+                MessageBox.Show(ae.Message.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
+        }
+
+        private void bunifuThinButton23_Click(object sender, EventArgs e)
+        {
+            string ImageDestination = "";
+            string[] ImageName;
+            try
+            {
+                FileDialog fileDialog = new OpenFileDialog();
+                fileDialog.InitialDirectory = @":C\";
+
+                fileDialog.Filter = "Image File (*.jpg;*.bmp;*.png;)|*.jpg;*.bmp;*.png;";
+
+                if (fileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    ImageDestination = fileDialog.FileName;
+                    Image img = new Bitmap(ImageDestination);
+
+                    AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+                    ImageName = ImageDestination.Split('\\');
+                    ThumbnailUrl = product.CopyProductThumbnails(fileDialog.FileName, ImageName[ImageName.Length - 1]);
+                    pictureBox3.Image = img;
+                }
+
+                fileDialog = null;
+            }
+            catch (System.ArgumentException ae)
+            {
+                ImageDestination = " ";
+                MessageBox.Show(ae.Message.ToString());
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
 
         private void bunifuFlatButton7_Click(object sender, EventArgs e)

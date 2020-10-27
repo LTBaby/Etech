@@ -235,7 +235,7 @@
             this.bunifuDropdown2.DisabledColor = System.Drawing.Color.Gray;
             this.bunifuDropdown2.ForeColor = System.Drawing.Color.White;
             this.bunifuDropdown2.items = new string[] {
-        "Solid State Drive",
+        "Solid State Drives",
         "Internal Harddrives",
         "External Harddrives"};
             this.bunifuDropdown2.Location = new System.Drawing.Point(574, 359);
@@ -245,6 +245,7 @@
             this.bunifuDropdown2.selectedIndex = -1;
             this.bunifuDropdown2.Size = new System.Drawing.Size(202, 35);
             this.bunifuDropdown2.TabIndex = 18;
+            this.bunifuDropdown2.onItemSelected += new System.EventHandler(this.bunifuDropdown2_onItemSelected);
             // 
             // bunifuDropdown3
             // 
@@ -262,6 +263,7 @@
             this.bunifuDropdown3.selectedIndex = -1;
             this.bunifuDropdown3.Size = new System.Drawing.Size(202, 35);
             this.bunifuDropdown3.TabIndex = 19;
+            this.bunifuDropdown3.onItemSelected += new System.EventHandler(this.bunifuDropdown3_onItemSelected);
             // 
             // bunifuDropdown4
             // 
@@ -281,6 +283,7 @@
             this.bunifuDropdown4.selectedIndex = -1;
             this.bunifuDropdown4.Size = new System.Drawing.Size(202, 35);
             this.bunifuDropdown4.TabIndex = 20;
+            this.bunifuDropdown4.onItemSelected += new System.EventHandler(this.bunifuDropdown4_onItemSelected);
             // 
             // bunifuDropdown5
             // 
@@ -300,6 +303,7 @@
             this.bunifuDropdown5.selectedIndex = -1;
             this.bunifuDropdown5.Size = new System.Drawing.Size(202, 35);
             this.bunifuDropdown5.TabIndex = 23;
+            this.bunifuDropdown5.onItemSelected += new System.EventHandler(this.bunifuDropdown5_onItemSelected);
             // 
             // label5
             // 
@@ -340,6 +344,7 @@
             this.bunifuDropdown6.selectedIndex = -1;
             this.bunifuDropdown6.Size = new System.Drawing.Size(202, 35);
             this.bunifuDropdown6.TabIndex = 26;
+            this.bunifuDropdown6.onItemSelected += new System.EventHandler(this.bunifuDropdown6_onItemSelected);
             // 
             // label6
             // 

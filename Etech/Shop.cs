@@ -58,11 +58,10 @@ namespace Etech
         public void DisplayShopList()
         {
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
-            product.CategoryId = int.Parse(CategorySelected);
-            Title = product.GetProductsForShopTitle();
-            Thumbnail = product.GetProductsForShopThumbnailUrl();
-            Description = product.GetProductsForShopDescription();
-            Price = product.GetProductsForShopPrice();
+            Title = product.GetProductsForShopTitle("Category_Id = ", int.Parse(CategorySelected));
+            Thumbnail = product.GetProductsForShopThumbnailUrl("Category_Id = ", int.Parse(CategorySelected));
+            Description = product.GetProductsForShopDescription("Category_Id = ", int.Parse(CategorySelected));
+            Price = product.GetProductsForShopPrice("Category_Id = ", int.Parse(CategorySelected));
             int counter = 0;
             foreach(string shopItem in Title)
             {
