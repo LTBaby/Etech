@@ -291,6 +291,55 @@ namespace Etech
             }
         }
 
+        private void bunifuTileButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuDropdown10_onItemSelected(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            product.CategoryId = bunifuDropdown10.selectedIndex + 1;
+            bunifuDropdown11.Items.Clear();
+            List<string> Titles = product.GetProductsForShopTitle();
+            foreach (string name in Titles)
+            {
+                bunifuDropdown11.Items.Add(name);
+
+            }
+        }
+
+        private void bunifuTileButton3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuTileButton2_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            List<string> Categories = product.GetProductsCategories();
+            bunifuDropdown10.Items.Clear();
+            foreach (string name in Categories)
+            {
+                bunifuDropdown10.Items.Add(name);
+
+            }
+            tabControl1.SelectedIndex = 2;
+        }
+
+        private void bunifuDropdown11_onItemSelected(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
+            product.CategoryId = bunifuDropdown10.selectedIndex + 1;
+            List<string> ProductThumbnail = product.GetProductsForShopThumbnailUrl();
+            ThumbnailUrl = ProductThumbnail[bunifuDropdown11.selectedIndex];
+            List<string> ProductImage = product.GetProductsForShopImageUrl();
+            ImageUrl = ProductImage[bunifuDropdown11.selectedIndex];
+
+            pictureBox5.Image = Image.FromFile(@ThumbnailUrl);
+            pictureBox6.Image = Image.FromFile(@ImageUrl);
+        }
+
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
