@@ -147,6 +147,8 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AlphaMightyFoxtrot\Cart.cs" />
+    <Compile Include="AlphaMightyFoxtrot\CartItem.cs" />
     <Compile Include="AlphaMightyFoxtrot\Customer.cs" />
     <Compile Include="AlphaMightyFoxtrot\OracleDB.cs" />
     <Compile Include="AlphaMightyFoxtrot\Product.cs" />

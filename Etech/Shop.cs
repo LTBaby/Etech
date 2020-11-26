@@ -14,6 +14,7 @@ namespace Etech
     {
         public string CategorySelected { get; set; }
         public string CurrentCategoryBrowsing { get; set; }
+        private List<string> ProductsIds = new List<string>();
         private List<string> Title = new List<string>();
         private List<string> Thumbnail = new List<string>();
         private List<string> Description = new List<string>();
@@ -62,6 +63,7 @@ namespace Etech
             Thumbnail = product.GetProductsForShopThumbnailUrl("Category_Id = ", int.Parse(CategorySelected));
             Description = product.GetProductsForShopDescription("Category_Id = ", int.Parse(CategorySelected));
             Price = product.GetProductsForShopPrice("Category_Id = ", int.Parse(CategorySelected));
+            ProductsIds = product.GetProductsId("Category_Id = ", int.Parse(CategorySelected));
             int counter = 0;
             foreach(string shopItem in Title)
             {
@@ -207,11 +209,13 @@ namespace Etech
                 bunifuCards10.Visible = false;
             else
                 bunifuCards10.Visible = true;
+
+
         }
 
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle1.Text;
+            labelTitleAdd.Text = labelTitle1.Text;
             label22.Text = labelPrice1.Text;
             pictureBox11.Image = pictureBox1.Image;
             tabControl1.SelectedIndex = 1;
@@ -220,7 +224,7 @@ namespace Etech
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle2.Text;
+            labelTitleAdd.Text = labelTitle2.Text;
             label22.Text = labelPrice2.Text;
             pictureBox11.Image = pictureBox2.Image;
             tabControl1.SelectedIndex = 1;
@@ -229,7 +233,7 @@ namespace Etech
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle3.Text;
+            labelTitleAdd.Text = labelTitle3.Text;
             label22.Text = labelPrice3.Text;
             pictureBox11.Image = pictureBox3.Image;
             tabControl1.SelectedIndex = 1;
@@ -238,7 +242,7 @@ namespace Etech
 
         private void bunifuThinButton24_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle4.Text;
+            labelTitleAdd.Text = labelTitle4.Text;
             label22.Text = labelPrice4.Text;
             pictureBox11.Image = pictureBox4.Image;
             tabControl1.SelectedIndex = 1;
@@ -247,7 +251,7 @@ namespace Etech
 
         private void bunifuThinButton25_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle5.Text;
+            labelTitleAdd.Text = labelTitle5.Text;
             label22.Text = labelPrice5.Text;
             pictureBox11.Image = pictureBox5.Image;
             tabControl1.SelectedIndex = 1;
@@ -256,7 +260,7 @@ namespace Etech
 
         private void bunifuThinButton26_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle6.Text;
+            labelTitleAdd.Text = labelTitle6.Text;
             label22.Text = labelPrice6.Text;
             pictureBox11.Image = pictureBox6.Image;
             tabControl1.SelectedIndex = 1;
@@ -265,7 +269,7 @@ namespace Etech
 
         private void bunifuThinButton27_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle7.Text;
+            labelTitleAdd.Text = labelTitle7.Text;
             label22.Text = labelPrice7.Text;
             pictureBox11.Image = pictureBox7.Image;
             tabControl1.SelectedIndex = 1;
@@ -274,7 +278,7 @@ namespace Etech
 
         private void bunifuThinButton28_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle8.Text;
+            labelTitleAdd.Text = labelTitle8.Text;
             label22.Text = labelPrice8.Text;
             pictureBox11.Image = pictureBox8.Image;
             tabControl1.SelectedIndex = 1;
@@ -283,7 +287,7 @@ namespace Etech
 
         private void bunifuThinButton29_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle9.Text;
+            labelTitleAdd.Text = labelTitle9.Text;
             label22.Text = labelPrice9.Text;
             pictureBox11.Image = pictureBox9.Image;
             tabControl1.SelectedIndex = 1;
@@ -292,7 +296,7 @@ namespace Etech
 
         private void bunifuThinButton210_Click(object sender, EventArgs e)
         {
-            label20.Text = labelTitle10.Text;
+            labelTitleAdd.Text = labelTitle10.Text;
             label22.Text = labelPrice10.Text;
             pictureBox11.Image = pictureBox10.Image;
             tabControl1.SelectedIndex = 1;
@@ -303,6 +307,110 @@ namespace Etech
         {
             tabControl1.SelectedIndex = 0;
             bunifuFlatButton8.Visible = false;
+        }
+
+        private List<string> CartTitles = new List<string>();
+        private List<string> CartPrices = new List<string>();
+        private List<Image> CartThumbnails = new List<Image>();
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            CartTitles.Add(labelTitleAdd.Text);
+            CartPrices.Add(label22.Text);
+            CartThumbnails.Add(pictureBox11.Image);
+            cartDisplay();
+        }
+
+        private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cartDisplay();
+        }
+
+        public void cartDisplay()
+        {
+            int count = 0;
+            foreach(string item in CartTitles)
+            { 
+                
+                switch (count + 1)
+                {
+                    case 1:
+                        pictureBox12.Image = CartThumbnails[count];
+                        label24.Text = CartTitles[count];
+                        label25.Text = CartPrices[count];
+                        break;
+                    case 2:
+                        pictureBox13.Image = CartThumbnails[count];
+                        label29.Text = CartTitles[count];
+                        label28.Text = CartPrices[count];
+                        break;
+                    case 3:
+                        pictureBox14.Image = CartThumbnails[count];
+                        label32.Text = CartTitles[count];
+                        label31.Text = CartPrices[count];
+                        break;
+                    case 4:
+                        pictureBox15.Image = CartThumbnails[count];
+                        label35.Text = CartTitles[count];
+                        label34.Text = CartPrices[count];
+                        break;
+                    case 5:
+                        pictureBox16.Image = CartThumbnails[count];
+                        label38.Text = CartTitles[count];
+                        label37.Text = CartPrices[count];
+                        break;
+                    case 6:
+                        pictureBox17.Image = CartThumbnails[count];
+                        label41.Text = CartTitles[count];
+                        label40.Text = CartPrices[count];
+                        break;
+                    case 7:
+                        pictureBox18.Image = CartThumbnails[count];
+                        label44.Text = CartTitles[count];
+                        label43.Text = CartPrices[count];
+                        break;
+                    case 8:
+                        pictureBox19.Image = CartThumbnails[count];
+                        label47.Text = CartTitles[count];
+                        label46.Text = CartPrices[count];
+                        break;
+                    case 9:
+                        pictureBox20.Image = CartThumbnails[count];
+                        label50.Text = CartTitles[count];
+                        label49.Text = CartPrices[count];
+                        break;
+                    case 10:
+                        pictureBox21.Image = CartThumbnails[count];
+                        label53.Text = CartTitles[count];
+                        label52.Text = CartPrices[count];
+                        break;
+                }
+                count++;
+            }
+        }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton9_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.Cart cart = new AlphaMightyFoxtrot.Cart();
+
+            cart.CustomerId = 1;
+            cart.CartItemId = 1;
+            var date = DateTime.Now;
+            string datetime = DateTime.Now.ToString("mm/dd/yyyy HH:mm:ss");
+
+           cart.DateOfOrder = date;
+
+            cart.OrderProgress = 1;
+            cart.DeliveryStatus = 'n';
+            cart.DiscountReceived = 20;
+            cart.Total = 3000;
+            cart.GrandTotal = 2880;
+
+            cart.AddCart();
         }
     }
 }
