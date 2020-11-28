@@ -12,7 +12,7 @@ namespace Etech.AlphaMightyFoxtrot
 {
     class OracleDB
     {
-        OracleConnection connection = new OracleConnection("DATA SOURCE=localhost:1522/XE;PERSIST SECURITY INFO=True;USER ID=TREVOR;Password=itrw311");
+        OracleConnection connection = new OracleConnection("DATA SOURCE=localhost:1521/XE;PERSIST SECURITY INFO=True;USER ID=TREVOR;Password=itrw311");
         public void OpenDB()
         {
             try
@@ -24,7 +24,6 @@ namespace Etech.AlphaMightyFoxtrot
             {
 
             }
-
         }
 
         public string InsertIntoDB(string tablename, string values)
@@ -77,33 +76,43 @@ namespace Etech.AlphaMightyFoxtrot
         public bool SelectFromWhereDBLogin(string TableName, string Column,string Where)
         {
             bool err = false;
+            string exep = "";
             string Select = "SELECT " + Column + " FROM " + TableName + " WHERE " + Where;
-            OracleConnection connection = new OracleConnection("DATA SOURCE=localhost:1522/XE;PERSIST SECURITY INFO=True;USER ID=TREVOR;Password=itrw311");
             OracleCommand command = new OracleCommand(Select);
             command.Connection = connection;
-            connection.Open();
-            OracleDataReader DataReader = command.ExecuteReader();
-            if (DataReader.HasRows)
+            try
             {
-                DataReader.Close();
-                err = true;
+                OpenDB();
+                OracleDataReader DataReader = command.ExecuteReader();
+                if (DataReader.HasRows)
+                {
+                    DataReader.Close();
+                    err = true;
+                }
+                else
+                {
+                    DataReader.Close();
+                    err = false;
+                }
+                command.ExecuteNonQuery();
             }
-            else
+            catch (Exception ex)
             {
-                DataReader.Close();
-                err = false;
+                exep = ex.ToString();
             }
-            connection.Close();
+            CloseDB();
+            
             return err;
+
+           
         }
         public List<string> SelectFromDBReader(string TableName, string Column)
         {
             List<string> results = new List<string>();
             string Select = "SELECT " + Column + " FROM " + TableName;
-            OracleConnection connection = new OracleConnection("DATA SOURCE=localhost:1522/XE;PERSIST SECURITY INFO=True;USER ID=TREVOR;Password=itrw311");
             OracleCommand command = new OracleCommand(Select);
             command.Connection = connection;
-            connection.Open();
+            OpenDB();
             OracleDataReader DataReader = command.ExecuteReader();
             if (DataReader.HasRows)
             {
@@ -117,7 +126,7 @@ namespace Etech.AlphaMightyFoxtrot
             {
                 DataReader.Close();
             }
-            connection.Close();
+            CloseDB();
             return results;
         }
 
@@ -125,10 +134,9 @@ namespace Etech.AlphaMightyFoxtrot
         {
             List<string> results = new List<string>();
             string Select = "SELECT " + Column + " FROM " + TableName + " WHERE " + Where;
-            OracleConnection connection = new OracleConnection("DATA SOURCE=localhost:1522/XE;PERSIST SECURITY INFO=True;USER ID=TREVOR;Password=itrw311");
             OracleCommand command = new OracleCommand(Select);
             command.Connection = connection;
-            connection.Open();
+            OpenDB();
             OracleDataReader DataReader = command.ExecuteReader();
             if (DataReader.HasRows)
             {
@@ -142,7 +150,7 @@ namespace Etech.AlphaMightyFoxtrot
             {
                 DataReader.Close();
             }
-            connection.Close();
+            CloseDB();
             return results;
         }
 

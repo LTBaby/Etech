@@ -9,7 +9,6 @@ namespace Etech.AlphaMightyFoxtrot
 {
     class Customer
     {
-        //Save data in class.
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
@@ -18,9 +17,7 @@ namespace Etech.AlphaMightyFoxtrot
         public string ContactNumber { get; set; }
         public string Password { get; set; }
         public DateTime RecentLogin { get; set; }
-
-
-        //Gebruik gestoorde data in klas
+        
         public string AddCustomer()
         {
             OracleDB oracleDB = new OracleDB();

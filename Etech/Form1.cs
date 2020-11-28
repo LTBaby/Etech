@@ -72,5 +72,17 @@ namespace Etech
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
             product.CategoryId = 1;
         }
+
+        private void bunifuFlatButton7_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.SearchScrapper searchScrapper = new AlphaMightyFoxtrot.SearchScrapper();
+            string searchTerm = TextboxSearch.Text;
+            searchScrapper.Download($"https://www.evetech.co.za/Search.aspx?s={searchTerm}", searchTerm);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
