@@ -36,5 +36,15 @@ namespace Etech.AlphaMightyFoxtrot
             bool err = oracleDB.SelectFromWhereDBLogin(TableName, Column, Where);
             return err;
         }
+
+        public void UpdateDate()
+        {
+            OracleDB oracleDB = new OracleDB();
+            string TableName = "Customer";
+            string Values = "Recent_Login = TO_DATE('" + RecentLogin.ToString("MM/dd/yyyy") + "','mm/dd/yyyy')";
+            string Where = "UserId = " + 9;
+            string err = oracleDB.UpdateWhereDB(TableName, Values,Where);
+            
+        }
     }
 }

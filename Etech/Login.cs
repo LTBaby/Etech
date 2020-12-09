@@ -32,6 +32,14 @@ namespace Etech
             {
                 MessageBox.Show("not correct");
             }
+            else {
+                DateTime date = new DateTime() ;
+                string datetime = DateTime.Now.ToString("MM/dd/yyyy");
+                if (DateTime.TryParse(datetime, out date))
+                {
+                    customer.RecentLogin = date;
+                }
+            }
         }
     }
 }

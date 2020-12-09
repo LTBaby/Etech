@@ -13,16 +13,16 @@ namespace Etech.AlphaMightyFoxtrot
     class SearchScrapper
     {
 
-        public List<string> Download(string _url,string searchKey)
+        public (List<string>, List<string>,List<string>) Download(string _url,string searchKey)
         {
-            var resultProducts = new List<object>();
+            //var resultProducts = new List<object>();            
+            List<string> name = new List<string>();
+            List<string> priceProd = new List<string>();
+            List<string> img = new List<string>();
 
-
-
-            //HtmlWeb webpage = new HtmlWeb();
-            //HtmlDocument webdoc = webpage.Load(_url);
-            //var htmlresult = webdoc.DocumentNode;
             var htmlresult = DownloadPageAsync(_url).Result;
+
+
             var body = getBody(htmlresult.ToString());
 
             var products = body
@@ -73,12 +73,17 @@ namespace Etech.AlphaMightyFoxtrot
                     { "img" , returnUrl },
                     { "search_key" , searchKey },
                 });
+                //resultProducts.Add(new {  name = productName,price = price,img = returnUrl, });
+
+                name.Add(productName);
+                priceProd.Add(price);
+                img.Add(returnUrl);
             });
 
 
 
 
-            return null;
+            return (name,priceProd,img);
         }
 
         public async Task<string> DownloadPageAsync(string url)

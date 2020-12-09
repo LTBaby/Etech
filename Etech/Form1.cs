@@ -1,3 +1,4 @@
+using MongoDB.Bson;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -77,7 +78,14 @@ namespace Etech
         {
             AlphaMightyFoxtrot.SearchScrapper searchScrapper = new AlphaMightyFoxtrot.SearchScrapper();
             string searchTerm = TextboxSearch.Text;
-            searchScrapper.Download($"https://www.evetech.co.za/Search.aspx?s={searchTerm}", searchTerm);
+            (List<string> name, List<string> price, List<string> img) = searchScrapper.Download($"https://www.evetech.co.za/Search.aspx?s={searchTerm}", searchTerm);
+            SearchDisplay searchDisplay = new SearchDisplay();
+            searchDisplay.name = name;
+            searchDisplay.price = price;
+            searchDisplay.img = img;
+            searchDisplay.Show();
+            AlphaMightyFoxtrot.MongoDB mongoDB = new AlphaMightyFoxtrot.MongoDB();
+            mongoDB.SearchWordStore(new BsonDocument {{ "searchTerm" , searchTerm }});
         }
 
         private void button2_Click(object sender, EventArgs e)

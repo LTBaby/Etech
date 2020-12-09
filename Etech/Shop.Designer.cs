@@ -29,17 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Shop));
-            this.bunifuDropdown1 = new Bunifu.Framework.UI.BunifuDropdown();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.bunifuDropdown2 = new Bunifu.Framework.UI.BunifuDropdown();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.bunifuRange1 = new Bunifu.Framework.UI.BunifuRange();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -130,6 +122,7 @@
             this.label23 = new System.Windows.Forms.Label();
             this.bunifuDropdown3 = new Bunifu.Framework.UI.BunifuDropdown();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.bunifuFlatButton9 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.bunifuCards11 = new Bunifu.Framework.UI.BunifuCards();
             this.label26 = new System.Windows.Forms.Label();
@@ -187,7 +180,38 @@
             this.label22 = new System.Windows.Forms.Label();
             this.labelTitleAdd = new System.Windows.Forms.Label();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
-            this.bunifuFlatButton9 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label20 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.labelId1 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
@@ -240,35 +264,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             this.SuspendLayout();
             // 
-            // bunifuDropdown1
-            // 
-            this.bunifuDropdown1.BackColor = System.Drawing.Color.Black;
-            this.bunifuDropdown1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.bunifuDropdown1.BorderRadius = 3;
-            this.bunifuDropdown1.DisabledColor = System.Drawing.SystemColors.ControlLight;
-            this.bunifuDropdown1.ForeColor = System.Drawing.Color.White;
-            this.bunifuDropdown1.items = new string[0];
-            this.bunifuDropdown1.Location = new System.Drawing.Point(3, 134);
-            this.bunifuDropdown1.Name = "bunifuDropdown1";
-            this.bunifuDropdown1.NomalColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            this.bunifuDropdown1.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuDropdown1.selectedIndex = -1;
-            this.bunifuDropdown1.Size = new System.Drawing.Size(225, 35);
-            this.bunifuDropdown1.TabIndex = 6;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(16)))));
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.bunifuDropdown2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.bunifuRange1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.bunifuDropdown1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Location = new System.Drawing.Point(736, 3);
             this.panel1.Name = "panel1";
@@ -288,17 +288,6 @@
             this.label8.Text = "Category";
             this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(177, 193);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 16);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "max";
-            // 
             // bunifuDropdown2
             // 
             this.bunifuDropdown2.BackColor = System.Drawing.Color.Transparent;
@@ -314,75 +303,6 @@
             this.bunifuDropdown2.selectedIndex = -1;
             this.bunifuDropdown2.Size = new System.Drawing.Size(220, 35);
             this.bunifuDropdown2.TabIndex = 12;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(3, 193);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 16);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "min";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(3, 209);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 16);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "R 5000";
-            // 
-            // bunifuRange1
-            // 
-            this.bunifuRange1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuRange1.BackgroudColor = System.Drawing.Color.DarkGray;
-            this.bunifuRange1.BorderRadius = 0;
-            this.bunifuRange1.IndicatorColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(40)))), ((int)(((byte)(51)))));
-            this.bunifuRange1.Location = new System.Drawing.Point(4, 225);
-            this.bunifuRange1.MaximumRange = 20000;
-            this.bunifuRange1.Name = "bunifuRange1";
-            this.bunifuRange1.RangeMax = 18937;
-            this.bunifuRange1.RangeMin = 0;
-            this.bunifuRange1.Size = new System.Drawing.Size(222, 30);
-            this.bunifuRange1.TabIndex = 11;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(177, 209);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 16);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "R 5000";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(3, 177);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 16);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Price Range";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 111);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(51, 16);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Sort By";
             // 
             // panel2
             // 
@@ -442,6 +362,7 @@
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = false;
             this.bunifuCards1.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards1.Controls.Add(this.label74);
             this.bunifuCards1.Controls.Add(this.label19);
             this.bunifuCards1.Controls.Add(this.labelPrice1);
             this.bunifuCards1.Controls.Add(this.labelTitle1);
@@ -536,6 +457,7 @@
             this.bunifuCards2.BorderRadius = 5;
             this.bunifuCards2.BottomSahddow = false;
             this.bunifuCards2.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards2.Controls.Add(this.label75);
             this.bunifuCards2.Controls.Add(this.label18);
             this.bunifuCards2.Controls.Add(this.labelPrice2);
             this.bunifuCards2.Controls.Add(this.labelTitle2);
@@ -630,6 +552,7 @@
             this.bunifuCards3.BorderRadius = 5;
             this.bunifuCards3.BottomSahddow = false;
             this.bunifuCards3.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards3.Controls.Add(this.label76);
             this.bunifuCards3.Controls.Add(this.label17);
             this.bunifuCards3.Controls.Add(this.labelPrice3);
             this.bunifuCards3.Controls.Add(this.labelTitle3);
@@ -724,6 +647,7 @@
             this.bunifuCards4.BorderRadius = 5;
             this.bunifuCards4.BottomSahddow = false;
             this.bunifuCards4.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards4.Controls.Add(this.label77);
             this.bunifuCards4.Controls.Add(this.label16);
             this.bunifuCards4.Controls.Add(this.labelPrice4);
             this.bunifuCards4.Controls.Add(this.labelTitle4);
@@ -818,6 +742,7 @@
             this.bunifuCards5.BorderRadius = 5;
             this.bunifuCards5.BottomSahddow = false;
             this.bunifuCards5.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards5.Controls.Add(this.label78);
             this.bunifuCards5.Controls.Add(this.label15);
             this.bunifuCards5.Controls.Add(this.labelPrice5);
             this.bunifuCards5.Controls.Add(this.labelTitle5);
@@ -912,6 +837,7 @@
             this.bunifuCards6.BorderRadius = 5;
             this.bunifuCards6.BottomSahddow = false;
             this.bunifuCards6.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards6.Controls.Add(this.label79);
             this.bunifuCards6.Controls.Add(this.label14);
             this.bunifuCards6.Controls.Add(this.labelPrice6);
             this.bunifuCards6.Controls.Add(this.labelTitle6);
@@ -1006,6 +932,7 @@
             this.bunifuCards7.BorderRadius = 5;
             this.bunifuCards7.BottomSahddow = false;
             this.bunifuCards7.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards7.Controls.Add(this.label80);
             this.bunifuCards7.Controls.Add(this.label7);
             this.bunifuCards7.Controls.Add(this.labelPrice7);
             this.bunifuCards7.Controls.Add(this.labelTitle7);
@@ -1100,6 +1027,7 @@
             this.bunifuCards8.BorderRadius = 5;
             this.bunifuCards8.BottomSahddow = false;
             this.bunifuCards8.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards8.Controls.Add(this.label81);
             this.bunifuCards8.Controls.Add(this.label9);
             this.bunifuCards8.Controls.Add(this.labelPrice8);
             this.bunifuCards8.Controls.Add(this.labelTitle8);
@@ -1194,6 +1122,7 @@
             this.bunifuCards9.BorderRadius = 5;
             this.bunifuCards9.BottomSahddow = false;
             this.bunifuCards9.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards9.Controls.Add(this.label82);
             this.bunifuCards9.Controls.Add(this.label12);
             this.bunifuCards9.Controls.Add(this.labelPrice9);
             this.bunifuCards9.Controls.Add(this.labelTitle9);
@@ -1288,6 +1217,7 @@
             this.bunifuCards10.BorderRadius = 5;
             this.bunifuCards10.BottomSahddow = false;
             this.bunifuCards10.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards10.Controls.Add(this.label83);
             this.bunifuCards10.Controls.Add(this.label13);
             this.bunifuCards10.Controls.Add(this.labelPrice10);
             this.bunifuCards10.Controls.Add(this.labelTitle10);
@@ -1744,6 +1674,8 @@
             // tabPage2
             // 
             this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(11)))), ((int)(((byte)(12)))), ((int)(((byte)(16)))));
+            this.tabPage2.Controls.Add(this.label73);
+            this.tabPage2.Controls.Add(this.label72);
             this.tabPage2.Controls.Add(this.bunifuFlatButton9);
             this.tabPage2.Controls.Add(this.flowLayoutPanel2);
             this.tabPage2.Controls.Add(this.bunifuFlatButton7);
@@ -1759,6 +1691,42 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.Click += new System.EventHandler(this.tabPage2_Click);
+            // 
+            // bunifuFlatButton9
+            // 
+            this.bunifuFlatButton9.Active = false;
+            this.bunifuFlatButton9.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuFlatButton9.BorderRadius = 0;
+            this.bunifuFlatButton9.ButtonText = "Place Order";
+            this.bunifuFlatButton9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuFlatButton9.DisabledColor = System.Drawing.Color.Gray;
+            this.bunifuFlatButton9.Iconcolor = System.Drawing.Color.Transparent;
+            this.bunifuFlatButton9.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton9.Iconimage")));
+            this.bunifuFlatButton9.Iconimage_right = null;
+            this.bunifuFlatButton9.Iconimage_right_Selected = null;
+            this.bunifuFlatButton9.Iconimage_Selected = null;
+            this.bunifuFlatButton9.IconMarginLeft = 0;
+            this.bunifuFlatButton9.IconMarginRight = 0;
+            this.bunifuFlatButton9.IconRightVisible = true;
+            this.bunifuFlatButton9.IconRightZoom = 0D;
+            this.bunifuFlatButton9.IconVisible = true;
+            this.bunifuFlatButton9.IconZoom = 90D;
+            this.bunifuFlatButton9.IsTab = false;
+            this.bunifuFlatButton9.Location = new System.Drawing.Point(6, 357);
+            this.bunifuFlatButton9.Name = "bunifuFlatButton9";
+            this.bunifuFlatButton9.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.bunifuFlatButton9.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.bunifuFlatButton9.OnHoverTextColor = System.Drawing.Color.White;
+            this.bunifuFlatButton9.selected = false;
+            this.bunifuFlatButton9.Size = new System.Drawing.Size(135, 38);
+            this.bunifuFlatButton9.TabIndex = 18;
+            this.bunifuFlatButton9.Text = "Place Order";
+            this.bunifuFlatButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.bunifuFlatButton9.Textcolor = System.Drawing.Color.White;
+            this.bunifuFlatButton9.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton9.Click += new System.EventHandler(this.bunifuFlatButton9_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -1785,6 +1753,8 @@
             this.bunifuCards11.BorderRadius = 5;
             this.bunifuCards11.BottomSahddow = true;
             this.bunifuCards11.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards11.Controls.Add(this.labelId1);
+            this.bunifuCards11.Controls.Add(this.label20);
             this.bunifuCards11.Controls.Add(this.label26);
             this.bunifuCards11.Controls.Add(this.label25);
             this.bunifuCards11.Controls.Add(this.label24);
@@ -1801,7 +1771,7 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(44, 107);
+            this.label26.Location = new System.Drawing.Point(3, 107);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(18, 16);
             this.label26.TabIndex = 4;
@@ -1811,7 +1781,7 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(62, 107);
+            this.label25.Location = new System.Drawing.Point(21, 107);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(18, 16);
             this.label25.TabIndex = 3;
@@ -1821,7 +1791,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(62, 14);
+            this.label24.Location = new System.Drawing.Point(3, 13);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(52, 16);
             this.label24.TabIndex = 2;
@@ -1842,6 +1812,8 @@
             this.bunifuCards12.BorderRadius = 5;
             this.bunifuCards12.BottomSahddow = true;
             this.bunifuCards12.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards12.Controls.Add(this.label63);
+            this.bunifuCards12.Controls.Add(this.label54);
             this.bunifuCards12.Controls.Add(this.label27);
             this.bunifuCards12.Controls.Add(this.label28);
             this.bunifuCards12.Controls.Add(this.label29);
@@ -1853,12 +1825,13 @@
             this.bunifuCards12.ShadowDepth = 20;
             this.bunifuCards12.Size = new System.Drawing.Size(186, 134);
             this.bunifuCards12.TabIndex = 1;
+            this.bunifuCards12.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuCards12_Paint);
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(44, 107);
+            this.label27.Location = new System.Drawing.Point(3, 107);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(18, 16);
             this.label27.TabIndex = 4;
@@ -1868,7 +1841,7 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(62, 107);
+            this.label28.Location = new System.Drawing.Point(21, 107);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(18, 16);
             this.label28.TabIndex = 3;
@@ -1878,7 +1851,7 @@
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(62, 14);
+            this.label29.Location = new System.Drawing.Point(3, 14);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(52, 16);
             this.label29.TabIndex = 2;
@@ -1899,6 +1872,8 @@
             this.bunifuCards13.BorderRadius = 5;
             this.bunifuCards13.BottomSahddow = true;
             this.bunifuCards13.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards13.Controls.Add(this.label64);
+            this.bunifuCards13.Controls.Add(this.label55);
             this.bunifuCards13.Controls.Add(this.label30);
             this.bunifuCards13.Controls.Add(this.label31);
             this.bunifuCards13.Controls.Add(this.label32);
@@ -1915,7 +1890,7 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(44, 107);
+            this.label30.Location = new System.Drawing.Point(3, 107);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(18, 16);
             this.label30.TabIndex = 4;
@@ -1925,7 +1900,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(62, 107);
+            this.label31.Location = new System.Drawing.Point(21, 107);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(18, 16);
             this.label31.TabIndex = 3;
@@ -1935,7 +1910,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(62, 14);
+            this.label32.Location = new System.Drawing.Point(3, 13);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(52, 16);
             this.label32.TabIndex = 2;
@@ -1956,6 +1931,8 @@
             this.bunifuCards14.BorderRadius = 5;
             this.bunifuCards14.BottomSahddow = true;
             this.bunifuCards14.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards14.Controls.Add(this.label65);
+            this.bunifuCards14.Controls.Add(this.label56);
             this.bunifuCards14.Controls.Add(this.label33);
             this.bunifuCards14.Controls.Add(this.label34);
             this.bunifuCards14.Controls.Add(this.label35);
@@ -1972,7 +1949,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(44, 107);
+            this.label33.Location = new System.Drawing.Point(3, 107);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(18, 16);
             this.label33.TabIndex = 4;
@@ -1982,7 +1959,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(62, 107);
+            this.label34.Location = new System.Drawing.Point(21, 107);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(18, 16);
             this.label34.TabIndex = 3;
@@ -1992,7 +1969,7 @@
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(62, 14);
+            this.label35.Location = new System.Drawing.Point(3, 14);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(52, 16);
             this.label35.TabIndex = 2;
@@ -2013,6 +1990,8 @@
             this.bunifuCards15.BorderRadius = 5;
             this.bunifuCards15.BottomSahddow = true;
             this.bunifuCards15.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards15.Controls.Add(this.label66);
+            this.bunifuCards15.Controls.Add(this.label57);
             this.bunifuCards15.Controls.Add(this.label36);
             this.bunifuCards15.Controls.Add(this.label37);
             this.bunifuCards15.Controls.Add(this.label38);
@@ -2029,7 +2008,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(44, 107);
+            this.label36.Location = new System.Drawing.Point(3, 107);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(18, 16);
             this.label36.TabIndex = 4;
@@ -2039,7 +2018,7 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(62, 107);
+            this.label37.Location = new System.Drawing.Point(21, 107);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(18, 16);
             this.label37.TabIndex = 3;
@@ -2049,7 +2028,7 @@
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(62, 14);
+            this.label38.Location = new System.Drawing.Point(3, 13);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(52, 16);
             this.label38.TabIndex = 2;
@@ -2070,6 +2049,8 @@
             this.bunifuCards16.BorderRadius = 5;
             this.bunifuCards16.BottomSahddow = true;
             this.bunifuCards16.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards16.Controls.Add(this.label67);
+            this.bunifuCards16.Controls.Add(this.label58);
             this.bunifuCards16.Controls.Add(this.label39);
             this.bunifuCards16.Controls.Add(this.label40);
             this.bunifuCards16.Controls.Add(this.label41);
@@ -2086,7 +2067,7 @@
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(44, 107);
+            this.label39.Location = new System.Drawing.Point(3, 107);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(18, 16);
             this.label39.TabIndex = 4;
@@ -2096,7 +2077,7 @@
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(62, 107);
+            this.label40.Location = new System.Drawing.Point(21, 107);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(18, 16);
             this.label40.TabIndex = 3;
@@ -2106,7 +2087,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(62, 14);
+            this.label41.Location = new System.Drawing.Point(3, 13);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(52, 16);
             this.label41.TabIndex = 2;
@@ -2127,6 +2108,8 @@
             this.bunifuCards17.BorderRadius = 5;
             this.bunifuCards17.BottomSahddow = true;
             this.bunifuCards17.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards17.Controls.Add(this.label68);
+            this.bunifuCards17.Controls.Add(this.label59);
             this.bunifuCards17.Controls.Add(this.label42);
             this.bunifuCards17.Controls.Add(this.label43);
             this.bunifuCards17.Controls.Add(this.label44);
@@ -2143,7 +2126,7 @@
             // 
             this.label42.AutoSize = true;
             this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(44, 107);
+            this.label42.Location = new System.Drawing.Point(3, 107);
             this.label42.Name = "label42";
             this.label42.Size = new System.Drawing.Size(18, 16);
             this.label42.TabIndex = 4;
@@ -2153,7 +2136,7 @@
             // 
             this.label43.AutoSize = true;
             this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(62, 107);
+            this.label43.Location = new System.Drawing.Point(21, 107);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(18, 16);
             this.label43.TabIndex = 3;
@@ -2163,7 +2146,7 @@
             // 
             this.label44.AutoSize = true;
             this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(62, 14);
+            this.label44.Location = new System.Drawing.Point(3, 13);
             this.label44.Name = "label44";
             this.label44.Size = new System.Drawing.Size(52, 16);
             this.label44.TabIndex = 2;
@@ -2184,6 +2167,8 @@
             this.bunifuCards18.BorderRadius = 5;
             this.bunifuCards18.BottomSahddow = true;
             this.bunifuCards18.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards18.Controls.Add(this.label69);
+            this.bunifuCards18.Controls.Add(this.label60);
             this.bunifuCards18.Controls.Add(this.label45);
             this.bunifuCards18.Controls.Add(this.label46);
             this.bunifuCards18.Controls.Add(this.label47);
@@ -2200,7 +2185,7 @@
             // 
             this.label45.AutoSize = true;
             this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(44, 107);
+            this.label45.Location = new System.Drawing.Point(3, 107);
             this.label45.Name = "label45";
             this.label45.Size = new System.Drawing.Size(18, 16);
             this.label45.TabIndex = 4;
@@ -2210,7 +2195,7 @@
             // 
             this.label46.AutoSize = true;
             this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(62, 107);
+            this.label46.Location = new System.Drawing.Point(21, 107);
             this.label46.Name = "label46";
             this.label46.Size = new System.Drawing.Size(18, 16);
             this.label46.TabIndex = 3;
@@ -2220,7 +2205,7 @@
             // 
             this.label47.AutoSize = true;
             this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(62, 14);
+            this.label47.Location = new System.Drawing.Point(3, 14);
             this.label47.Name = "label47";
             this.label47.Size = new System.Drawing.Size(52, 16);
             this.label47.TabIndex = 2;
@@ -2241,6 +2226,8 @@
             this.bunifuCards19.BorderRadius = 5;
             this.bunifuCards19.BottomSahddow = true;
             this.bunifuCards19.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards19.Controls.Add(this.label70);
+            this.bunifuCards19.Controls.Add(this.label61);
             this.bunifuCards19.Controls.Add(this.label48);
             this.bunifuCards19.Controls.Add(this.label49);
             this.bunifuCards19.Controls.Add(this.label50);
@@ -2257,7 +2244,7 @@
             // 
             this.label48.AutoSize = true;
             this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.Location = new System.Drawing.Point(44, 107);
+            this.label48.Location = new System.Drawing.Point(3, 107);
             this.label48.Name = "label48";
             this.label48.Size = new System.Drawing.Size(18, 16);
             this.label48.TabIndex = 4;
@@ -2267,7 +2254,7 @@
             // 
             this.label49.AutoSize = true;
             this.label49.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.Location = new System.Drawing.Point(62, 107);
+            this.label49.Location = new System.Drawing.Point(21, 107);
             this.label49.Name = "label49";
             this.label49.Size = new System.Drawing.Size(18, 16);
             this.label49.TabIndex = 3;
@@ -2277,7 +2264,7 @@
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.Location = new System.Drawing.Point(62, 14);
+            this.label50.Location = new System.Drawing.Point(3, 13);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(52, 16);
             this.label50.TabIndex = 2;
@@ -2285,7 +2272,7 @@
             // 
             // pictureBox20
             // 
-            this.pictureBox20.Location = new System.Drawing.Point(23, 32);
+            this.pictureBox20.Location = new System.Drawing.Point(24, 32);
             this.pictureBox20.Name = "pictureBox20";
             this.pictureBox20.Size = new System.Drawing.Size(136, 72);
             this.pictureBox20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -2298,6 +2285,8 @@
             this.bunifuCards20.BorderRadius = 5;
             this.bunifuCards20.BottomSahddow = true;
             this.bunifuCards20.color = System.Drawing.Color.BlueViolet;
+            this.bunifuCards20.Controls.Add(this.label71);
+            this.bunifuCards20.Controls.Add(this.label62);
             this.bunifuCards20.Controls.Add(this.label51);
             this.bunifuCards20.Controls.Add(this.label52);
             this.bunifuCards20.Controls.Add(this.label53);
@@ -2314,7 +2303,7 @@
             // 
             this.label51.AutoSize = true;
             this.label51.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.Location = new System.Drawing.Point(44, 107);
+            this.label51.Location = new System.Drawing.Point(3, 107);
             this.label51.Name = "label51";
             this.label51.Size = new System.Drawing.Size(18, 16);
             this.label51.TabIndex = 4;
@@ -2324,7 +2313,7 @@
             // 
             this.label52.AutoSize = true;
             this.label52.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.Location = new System.Drawing.Point(62, 107);
+            this.label52.Location = new System.Drawing.Point(21, 107);
             this.label52.Name = "label52";
             this.label52.Size = new System.Drawing.Size(18, 16);
             this.label52.TabIndex = 3;
@@ -2334,7 +2323,7 @@
             // 
             this.label53.AutoSize = true;
             this.label53.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.Location = new System.Drawing.Point(62, 14);
+            this.label53.Location = new System.Drawing.Point(3, 14);
             this.label53.Name = "label53";
             this.label53.Size = new System.Drawing.Size(52, 16);
             this.label53.TabIndex = 2;
@@ -2435,41 +2424,328 @@
             this.pictureBox11.TabIndex = 0;
             this.pictureBox11.TabStop = false;
             // 
-            // bunifuFlatButton9
+            // label20
             // 
-            this.bunifuFlatButton9.Active = false;
-            this.bunifuFlatButton9.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton9.BorderRadius = 0;
-            this.bunifuFlatButton9.ButtonText = "Place Order";
-            this.bunifuFlatButton9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton9.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton9.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton9.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton9.Iconimage")));
-            this.bunifuFlatButton9.Iconimage_right = null;
-            this.bunifuFlatButton9.Iconimage_right_Selected = null;
-            this.bunifuFlatButton9.Iconimage_Selected = null;
-            this.bunifuFlatButton9.IconMarginLeft = 0;
-            this.bunifuFlatButton9.IconMarginRight = 0;
-            this.bunifuFlatButton9.IconRightVisible = true;
-            this.bunifuFlatButton9.IconRightZoom = 0D;
-            this.bunifuFlatButton9.IconVisible = true;
-            this.bunifuFlatButton9.IconZoom = 90D;
-            this.bunifuFlatButton9.IsTab = false;
-            this.bunifuFlatButton9.Location = new System.Drawing.Point(6, 357);
-            this.bunifuFlatButton9.Name = "bunifuFlatButton9";
-            this.bunifuFlatButton9.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.bunifuFlatButton9.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
-            this.bunifuFlatButton9.OnHoverTextColor = System.Drawing.Color.White;
-            this.bunifuFlatButton9.selected = false;
-            this.bunifuFlatButton9.Size = new System.Drawing.Size(135, 38);
-            this.bunifuFlatButton9.TabIndex = 18;
-            this.bunifuFlatButton9.Text = "Place Order";
-            this.bunifuFlatButton9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.bunifuFlatButton9.Textcolor = System.Drawing.Color.White;
-            this.bunifuFlatButton9.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuFlatButton9.Click += new System.EventHandler(this.bunifuFlatButton9_Click);
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(165, 118);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(15, 16);
+            this.label20.TabIndex = 5;
+            this.label20.Text = "1";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.Location = new System.Drawing.Point(168, 118);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(15, 16);
+            this.label54.TabIndex = 6;
+            this.label54.Text = "1";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.Location = new System.Drawing.Point(168, 118);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(15, 16);
+            this.label55.TabIndex = 6;
+            this.label55.Text = "1";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.Location = new System.Drawing.Point(168, 118);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(15, 16);
+            this.label56.TabIndex = 7;
+            this.label56.Text = "1";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.Location = new System.Drawing.Point(168, 118);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(15, 16);
+            this.label57.TabIndex = 8;
+            this.label57.Text = "1";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.Location = new System.Drawing.Point(168, 118);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(15, 16);
+            this.label58.TabIndex = 8;
+            this.label58.Text = "1";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.Location = new System.Drawing.Point(168, 118);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(15, 16);
+            this.label59.TabIndex = 8;
+            this.label59.Text = "1";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.Location = new System.Drawing.Point(167, 118);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(15, 16);
+            this.label60.TabIndex = 8;
+            this.label60.Text = "1";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.Location = new System.Drawing.Point(168, 118);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(15, 16);
+            this.label61.TabIndex = 8;
+            this.label61.Text = "1";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.Location = new System.Drawing.Point(167, 118);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(15, 16);
+            this.label62.TabIndex = 8;
+            this.label62.Text = "1";
+            // 
+            // labelId1
+            // 
+            this.labelId1.AutoSize = true;
+            this.labelId1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelId1.Location = new System.Drawing.Point(165, 13);
+            this.labelId1.Name = "labelId1";
+            this.labelId1.Size = new System.Drawing.Size(15, 16);
+            this.labelId1.TabIndex = 6;
+            this.labelId1.Text = "1";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.Location = new System.Drawing.Point(168, 13);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(15, 16);
+            this.label63.TabIndex = 7;
+            this.label63.Text = "1";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.Location = new System.Drawing.Point(168, 13);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(15, 16);
+            this.label64.TabIndex = 7;
+            this.label64.Text = "1";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.Location = new System.Drawing.Point(168, 13);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(15, 16);
+            this.label65.TabIndex = 8;
+            this.label65.Text = "1";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.Location = new System.Drawing.Point(168, 13);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(15, 16);
+            this.label66.TabIndex = 9;
+            this.label66.Text = "1";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.Location = new System.Drawing.Point(168, 13);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(15, 16);
+            this.label67.TabIndex = 9;
+            this.label67.Text = "1";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.Location = new System.Drawing.Point(168, 13);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(15, 16);
+            this.label68.TabIndex = 9;
+            this.label68.Text = "1";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.Location = new System.Drawing.Point(167, 13);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(15, 16);
+            this.label69.TabIndex = 9;
+            this.label69.Text = "1";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.Location = new System.Drawing.Point(168, 13);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(15, 16);
+            this.label70.TabIndex = 9;
+            this.label70.Text = "1";
+            this.label70.Click += new System.EventHandler(this.label70_Click);
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.Location = new System.Drawing.Point(167, 13);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(15, 16);
+            this.label71.TabIndex = 9;
+            this.label71.Text = "1";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.ForeColor = System.Drawing.Color.White;
+            this.label72.Location = new System.Drawing.Point(896, 377);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(16, 18);
+            this.label72.TabIndex = 19;
+            this.label72.Text = "0";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.Color.White;
+            this.label73.Location = new System.Drawing.Point(948, 3);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(19, 18);
+            this.label73.TabIndex = 20;
+            this.label73.Text = "R";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.Location = new System.Drawing.Point(178, 26);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(19, 18);
+            this.label74.TabIndex = 12;
+            this.label74.Text = "R";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.Location = new System.Drawing.Point(178, 30);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(19, 18);
+            this.label75.TabIndex = 13;
+            this.label75.Text = "R";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.Location = new System.Drawing.Point(178, 25);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(19, 18);
+            this.label76.TabIndex = 14;
+            this.label76.Text = "R";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.Location = new System.Drawing.Point(178, 25);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(19, 18);
+            this.label77.TabIndex = 14;
+            this.label77.Text = "R";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.Location = new System.Drawing.Point(178, 26);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(19, 18);
+            this.label78.TabIndex = 14;
+            this.label78.Text = "R";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.Location = new System.Drawing.Point(178, 26);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(19, 18);
+            this.label79.TabIndex = 15;
+            this.label79.Text = "R";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.Location = new System.Drawing.Point(178, 26);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(19, 18);
+            this.label80.TabIndex = 16;
+            this.label80.Text = "R";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.Location = new System.Drawing.Point(178, 25);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(19, 18);
+            this.label81.TabIndex = 17;
+            this.label81.Text = "R";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label82.Location = new System.Drawing.Point(178, 26);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(19, 18);
+            this.label82.TabIndex = 18;
+            this.label82.Text = "R";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label83.Location = new System.Drawing.Point(178, 25);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(19, 18);
+            this.label83.TabIndex = 19;
+            this.label83.Text = "R";
             // 
             // Shop
             // 
@@ -2563,17 +2839,9 @@
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuDropdown bunifuDropdown1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private Bunifu.Framework.UI.BunifuRange bunifuRange1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
         private Bunifu.Framework.UI.BunifuGradientPanel bunifuGradientPanel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
@@ -2722,5 +2990,37 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.PictureBox pictureBox21;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton9;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label labelId1;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label82;
+        private System.Windows.Forms.Label label83;
     }
 }

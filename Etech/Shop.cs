@@ -34,7 +34,6 @@ namespace Etech
         {
             bunifuDropdown3.Clear();
             bunifuDropdown2.Clear();
-            bunifuDropdown1.Clear();
             bunifuFlatButton8.Visible = false;
 
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
@@ -71,7 +70,6 @@ namespace Etech
                 counter++;
             }
             HideEmptyContainers();
-            
         }
 
         public void ContainersDisplay(int i, string Title, string Thumbnail, string Description, string Price)
@@ -209,10 +207,60 @@ namespace Etech
                 bunifuCards10.Visible = false;
             else
                 bunifuCards10.Visible = true;
-
-
         }
 
+        public void HideList()
+        {
+            if (label25.Text == "R")
+                bunifuCards11.Visible = false;
+            else
+                bunifuCards11.Visible = true;
+
+            if (label28.Text == "R")
+                bunifuCards12.Visible = false;
+            else
+                bunifuCards12.Visible = true;
+
+            if (label31.Text == "R")
+                bunifuCards13.Visible = false;
+            else
+                bunifuCards13.Visible = true;
+
+            if (label34.Text == "R")
+                bunifuCards14.Visible = false;
+            else
+                bunifuCards14.Visible = true;
+
+            if (label37.Text == "R")
+                bunifuCards15.Visible = false;
+            else
+                bunifuCards15.Visible = true;
+
+            if (label40.Text == "R")
+                bunifuCards16.Visible = false;
+            else
+                bunifuCards16.Visible = true;
+
+            if (label43.Text == "R")
+                bunifuCards17.Visible = false;
+            else
+                bunifuCards17.Visible = true;
+
+            if (label46.Text == "R")
+                bunifuCards18.Visible = false;
+            else
+                bunifuCards18.Visible = true;
+
+            if (label49.Text == "R")
+                bunifuCards19.Visible = false;
+            else
+                bunifuCards19.Visible = true;
+
+            if (label52.Text == "R")
+                bunifuCards20.Visible = false;
+            else
+                bunifuCards20.Visible = true;
+        }
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
             labelTitleAdd.Text = labelTitle1.Text;
@@ -220,6 +268,7 @@ namespace Etech
             pictureBox11.Image = pictureBox1.Image;
             tabControl1.SelectedIndex = 1;
             bunifuFlatButton8.Visible = true;
+
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
@@ -311,18 +360,23 @@ namespace Etech
 
         private List<string> CartTitles = new List<string>();
         private List<string> CartPrices = new List<string>();
+        private List<string> CartProductId = new List<string>();
         private List<Image> CartThumbnails = new List<Image>();
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
             CartTitles.Add(labelTitleAdd.Text);
             CartPrices.Add(label22.Text);
             CartThumbnails.Add(pictureBox11.Image);
+            label72.Text = (Convert.ToInt32(label72.Text) + Convert.ToInt32(label22.Text)).ToString();
             cartDisplay();
+            HideList();
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            HideList();
             cartDisplay();
+
         }
 
         public void cartDisplay()
@@ -396,21 +450,42 @@ namespace Etech
         private void bunifuFlatButton9_Click(object sender, EventArgs e)
         {
             AlphaMightyFoxtrot.Cart cart = new AlphaMightyFoxtrot.Cart();
+            AlphaMightyFoxtrot.CartItem cartItem = new AlphaMightyFoxtrot.CartItem();
 
             cart.CustomerId = 1;
-            cart.CartItemId = 1;
-            var date = DateTime.Now;
-            string datetime = DateTime.Now.ToString("mm/dd/yyyy HH:mm:ss");
-
-           cart.DateOfOrder = date;
 
             cart.OrderProgress = 1;
             cart.DeliveryStatus = 'n';
-            cart.DiscountReceived = 20;
-            cart.Total = 3000;
-            cart.GrandTotal = 2880;
+            cart.DiscountReceived = 0;
+            cart.Total = float.Parse(label72.Text);
+            cart.GrandTotal = float.Parse(label72.Text);
 
             cart.AddCart();
+            List<string> Ids = cart.getCartIds();
+            int counter = 0;
+            foreach (var t in CartTitles)
+            {
+                cartItem.CartId = Convert.ToInt32(Ids[Ids.Count - 1]);
+                Random rnd = new Random();
+                int m = rnd.Next(14, 16);
+                cartItem.ProductId = m;
+                cartItem.Quantity = 1;
+                cartItem.Price = float.Parse(CartPrices[counter]);
+                cartItem.Discount = 10;
+                cartItem.AddCartItem();
+                counter++;
+            }
+
+        }
+
+        private void bunifuCards12_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label70_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

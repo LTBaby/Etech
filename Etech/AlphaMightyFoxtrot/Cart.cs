@@ -22,9 +22,18 @@ namespace Etech.AlphaMightyFoxtrot
         {
             OracleDB oracleDB = new OracleDB();
             string TableName = "Cart";
-            string Values = "SEQ_CartId.nextval," + CustomerId.ToString() + "," + "TO_DATE('" + DateOfOrder.ToString("mm/dd/yyyy HH:mm:ss") + "', 'mm/dd/yyyy hh24:mi:ss')" + "," + OrderProgress.ToString() + ","  + DiscountReceived.ToString() + "," + Total.ToString() + "," + GrandTotal.ToString();
+            string Values = "SEQ_CartId.nextval," + CustomerId.ToString() + ","  + OrderProgress.ToString() + ","  + DiscountReceived.ToString() + "," + Total.ToString() + "," + GrandTotal.ToString();
             string err = oracleDB.InsertIntoDB(TableName, Values);
             return err;
+        }
+
+        public List<string> getCartIds()
+        {
+            OracleDB oracleDB = new OracleDB();
+            string TableName = "Cart";
+            string Column = "Cart_Id";
+            List<string> result = oracleDB.SelectFromDBReader(TableName, Column);
+            return result;
         }
     }
 }

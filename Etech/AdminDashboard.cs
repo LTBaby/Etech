@@ -11,6 +11,9 @@ using System.IO;
 using Oracle.DataAccess;
 using Oracle.ManagedDataAccess.Client;
 using System.Configuration;
+using Newtonsoft.Json.Linq;
+using Newtonsoft.Json;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace Etech
 {
@@ -496,6 +499,103 @@ namespace Etech
             }
         }
 
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.MongoDB mongoDB = new AlphaMightyFoxtrot.MongoDB();
+            mongoDB.getSearchWords();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AlphaMightyFoxtrot.MongoDB mongoDB = new AlphaMightyFoxtrot.MongoDB();
+            string j = mongoDB.getSearchWords();
+            List<string> searchKey = new List<string>();
+            List<string> searchKeyDis = new List<string>();
+            List<int> searchKeyCount = new List<int>();
+            while (j != "")
+            {
+                int index = j.IndexOf("searchTerm");
+                string k = j.Remove(0, index);
+                index = k.IndexOf(":");
+                k = k.Remove(0, index);
+                index = k.IndexOf("\"");
+                k = k.Remove(0, index);
+                k = k.Remove(0, 1);
+                index = k.IndexOf("\"");
+                k = k.Remove(index);
+
+                searchKey.Add(k);
+
+                index = j.IndexOf("searchTerm");
+                j = j.Remove(0,index);
+                index = j.IndexOf("}");
+                j = j.Remove(0, index + 2);
+            }
+            searchKeyDis = searchKey.Distinct().ToList();
+            int count = 0;
+            int searches = 0;
+            foreach(var q in searchKeyDis)
+            {
+                searchKeyCount.Add(0);
+            }
+            for (int i = 0; i < searchKeyDis.Count(); i++)
+            {
+                foreach (var item in searchKey)
+                {
+                    if (item == searchKeyDis[count])
+                    {
+                        searches++;
+                        searchKeyCount[count] = searches;
+                    }
+                   
+                }
+                searches = 0; 
+                count++;
+            }
+            SearchWordColumnGraph(searchKeyDis.ToArray(), searchKeyCount.ToArray());
+        }
+        private void ProductsOrderedLineGraph(string[] x, int[] y)
+        {
+            //The string array x contains all the product names
+            //The int array contains the values of how many products is sold
+            Chart1.Series[0].LegendText = "Products ordered";//Name of the series that the graph displays
+            this.Chart1.Titles.Add("Total Products");
+            Chart1.Series[0].ChartType = SeriesChartType.Line;
+            Chart1.Series[0].IsValueShownAsLabel = true;
+            Chart1.Series[0].Points.DataBindXY(x, y);
+        }
+
+        private void RatingsPieGraph(string product, string[] x, int[] y)
+        {
+
+            Chart1.Series[0].Points.DataBindXY(x, y);
+            this.Chart1.Titles.Add("Ratings for " + product);
+            Chart1.Series[0].ChartType = SeriesChartType.Pie;
+            Chart1.Legends[0].Enabled = true;
+            Chart1.Series[0].IsValueShownAsLabel = true;
+            Chart1.Series[0].Points.DataBindXY(x, y);
+        }
+        private void SearchWordColumnGraph(string[] x, int[] y)
+        {
+            Chart1.Series[0].LegendText = "Search count";//String wat geroep word
+            this.Chart1.Titles.Add("Total times words were searched");
+            Chart1.Series[0].ChartType = SeriesChartType.Column;
+            Chart1.Series[0].IsValueShownAsLabel = true;
+            Chart1.Series[0].Points.DataBindXY(x, y);
+        }
+        private void UserLineGraph(string[] x, int[] y)
+        {
+            Chart1.Series[0].LegendText = "Search count";//String wat geroep word
+            Chart1.Series[0].ChartType = SeriesChartType.Line;
+            this.Chart1.Titles.Add("Total times searched");
+            Chart1.Series[0].IsValueShownAsLabel = true;
+            Chart1.Series[0].Points.DataBindXY(x, y);
+        }
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
             AlphaMightyFoxtrot.Product product = new AlphaMightyFoxtrot.Product();
